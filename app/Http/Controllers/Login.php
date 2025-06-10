@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Auth;
-use Redirect;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Redirect;
+
 use App\Models\PasswordReset;
 use App\Models\User;
 use App\Models\UserLogin;
@@ -22,10 +24,9 @@ class Login extends Controller
         try {
             // Step 1: Validate Input
             $validation = Validator::make($request->all(), [
-                'username' => 'required|unique:users',
+                'username' => 'required|exists:users,username',
                 'password' => 'required|string',
             ]);
-
             if ($validation->fails()) {
                 $errorMessage = $validation->getMessageBag()->first();
 

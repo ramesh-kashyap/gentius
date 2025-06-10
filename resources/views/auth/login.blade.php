@@ -18,13 +18,10 @@
 
 
 
-                    <form method=post action="{{route('user.login')}}">
-                        <!-- <input type="hidden" name="form_id" value="17486756755540"><input type="hidden" name="form_token" value="4ada214cc191e49babb7f908e37b6440"> -->
-                        <!-- <input type=hidden name=a value='do_login'>
-                        <input type=hidden name=follow value=''>
-                        <input type=hidden name=follow_id value=''> -->
+                    <form method=post action="{{route('login')}}">
+                   
                         @csrf
-                        <table cellspacing=0 cellpadding=2 border=0>
+                        <!-- <table cellspacing=0 cellpadding=2 border=0> -->
                             <div class="form-group">
                                 <input type=text name=username value='' class=inpts size=30 autofocus="autofocus" placeholder="Your Username">
                             </div>
@@ -37,7 +34,7 @@
                                 <div class="reset-btn"><a href="#">Forgot Password</a></div>
                             </div>
                             <div class="btn-box"><button type="submit"  class="theme-btn">Sign In</button></div>
-                        </table>
+                        <!-- </table> -->
                     </form>
                 </div>
                 <div class="text">Can’t login? <a href="">Sign up for new user?</a></div>
