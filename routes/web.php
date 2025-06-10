@@ -93,7 +93,7 @@ Route::get('/ChangePass', [App\Http\Controllers\UserPanel\Profile::class, 'chang
 Route::get('/security-password', [App\Http\Controllers\UserPanel\Profile::class, 'ChangeSecurityPass'])->name('user.security-password');
 Route::get('/share', [App\Http\Controllers\UserPanel\Profile::class, 'share'])->name('user.share');
 Route::get('/security', [App\Http\Controllers\UserPanel\Profile::class, 'security'])->name('user.security');
-Route::get('/refreals', [App\Http\Controllers\UserPanel\Profile::class, 'refreals'])->name('user.refreals');
+Route::get('/referral', [App\Http\Controllers\UserPanel\Profile::class, 'refreals'])->name('user.referral');
 Route::get('/refreallink', [App\Http\Controllers\UserPanel\Profile::class, 'refreallink'])->name('user.refreallink');
 Route::post('/send-otp', [App\Http\Controllers\UserPanel\Profile::class, 'sendOtp'])->name('user.send-otp');
 Route::post('/update-password', [App\Http\Controllers\UserPanel\Profile::class, 'updatePassword'])->name('user.update-password');

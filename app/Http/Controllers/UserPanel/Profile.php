@@ -47,7 +47,7 @@ class Profile extends Controller
     public function refreals()
     {
     
-    $this->data['page'] = 'user.profile.refreals';
+    $this->data['page'] = 'user.profile.referral';
     return $this->dashboard_layout();
 
     }
