@@ -11,7 +11,7 @@
                 <span class="iconBl icon-wall-clock-11"></span>
                 <span id="time"></span>
                 <span id="date"></span>
-            </div>
+            </div> 
         </div>
         <div class="picture" style="background-image: url({{asset('')}}assets/c20a81c4/img/bginvest.png);"></div>
     </div>

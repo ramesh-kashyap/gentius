@@ -6,10 +6,10 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Auth;
-use Redirect;
+use Illuminate\Support\Facades\Redirect;
 use Carbon\Carbon;
-use Log;
-use Hash;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Hash;
 class Register extends Controller
 {
 
@@ -92,7 +92,7 @@ class Register extends Controller
                 //  
           
             $data['name'] = $post_array['name'];
-            $data['phone'] = $post_array['phone'];
+            // $data['phone'] = $post_array['phone'];
             $data['username'] = $username;
             $data['email'] = $post_array['email'];
             $data['password'] =   Hash::make($post_array['password']);
@@ -116,14 +116,14 @@ class Register extends Controller
             $user = User::find($registered_user_id);
             // Auth::loginUsingId($registered_user_id);
           
-             sendEmail($user->email, 'Welcome to '.siteName(), [
-                'name' => $user->name,
-                'username' => $user->username,
-                'password' => $user->PSR,
-                'email' => $user->email,
-                'viewpage' => 'register_sucess',
-                 'link'=>route('login'),
-            ]);
+            //  sendEmail($user->email, 'Welcome to '.siteName(), [
+            //     'name' => $user->name,
+            //     'username' => $user->username,
+            //     'password' => $user->PSR,
+            //     'email' => $user->email,
+            //     'viewpage' => 'register_sucess',
+            //      'link'=>route('login'),
+            // ]);
             
             
 

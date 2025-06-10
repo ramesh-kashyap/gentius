@@ -98,67 +98,67 @@
                                 <div class="col-lg-4 col-6"><input type="radio" name="type" value="process_51"
                                         id="process_51" class="btn-check" checked=""><label
                                         class="btn btn-dark deposit-button mb-2" for="process_51"><img
-                                            src="images/51.gif" align="absmiddle" style="width: 32px;"> ePayCore</label>
+                                            src="{{asset('')}}upnl/images/51.gif" align="absmiddle" style="width: 32px;"> ePayCore</label>
                                 </div>
 
                                 <div class="col-lg-4 col-6"><input type="radio" name="type" value="process_48"
                                         id="process_48" class="btn-check" checked=""><label
                                         class="btn btn-dark deposit-button mb-2" for="process_48"><img
-                                            src="images/48.gif" align="absmiddle" style="width: 32px;"> Bitcoin</label>
+                                            src="{{asset('')}}upnl/images/48.gif" align="absmiddle" style="width: 32px;"> Bitcoin</label>
                                 </div>
 
                                 <div class="col-lg-4 col-6"><input type="radio" name="type" value="process_68"
                                         id="process_68" class="btn-check" checked=""><label
                                         class="btn btn-dark deposit-button mb-2" for="process_68"><img
-                                            src="images/68.gif" align="absmiddle" style="width: 32px;"> Litecoin</label>
+                                            src="{{asset('')}}upnl/images/68.gif" align="absmiddle" style="width: 32px;"> Litecoin</label>
                                 </div>
 
                                 <div class="col-lg-4 col-6"><input type="radio" name="type" value="process_79"
                                         id="process_79" class="btn-check" checked=""><label
                                         class="btn btn-dark deposit-button mb-2" for="process_79"><img
-                                            src="images/79.gif" align="absmiddle" style="width: 32px;"> Dogecoin</label>
+                                            src="{{asset('')}}upnl/images/79.gif" align="absmiddle" style="width: 32px;"> Dogecoin</label>
                                 </div>
 
                                 <div class="col-lg-4 col-6"><input type="radio" name="type" value="process_69"
                                         id="process_69" class="btn-check" checked=""><label
                                         class="btn btn-dark deposit-button mb-2" for="process_69"><img
-                                            src="images/69.gif" align="absmiddle" style="width: 32px;"> Ethereum</label>
+                                            src="{{asset('')}}upnl/images/69.gif" align="absmiddle" style="width: 32px;"> Ethereum</label>
                                 </div>
 
                                 <div class="col-lg-4 col-6"><input type="radio" name="type" value="process_72"
                                         id="process_72" class="btn-check" checked=""><label
                                         class="btn btn-dark deposit-button mb-2" for="process_72"><img
-                                            src="images/72.gif" align="absmiddle" style="width: 32px;"> Ripple</label>
+                                            src="{{asset('')}}upnl/images/72.gif" align="absmiddle" style="width: 32px;"> Ripple</label>
                                 </div>
 
                                 <div class="col-lg-4 col-6"><input type="radio" name="type" value="process_85"
                                         id="process_85" class="btn-check" checked=""><label
                                         class="btn btn-dark deposit-button mb-2" for="process_85"><img
-                                            src="images/85.gif" align="absmiddle" style="width: 32px;"> Tron</label>
+                                            src="{{asset('')}}upnl/images/85.gif" align="absmiddle" style="width: 32px;"> Tron</label>
                                 </div>
 
                                 <div class="col-lg-4 col-6"><input type="radio" name="type" value="process_94"
                                         id="process_94" class="btn-check" checked=""><label
                                         class="btn btn-dark deposit-button mb-2" for="process_94"><img
-                                            src="images/94.gif" align="absmiddle" style="width: 32px;"> BNB</label>
+                                            src="{{asset('')}}upnl/images/94.gif" align="absmiddle" style="width: 32px;"> BNB</label>
                                 </div>
 
                                 <div class="col-lg-4 col-6"><input type="radio" name="type" value="process_82"
                                         id="process_82" class="btn-check" checked=""><label
                                         class="btn btn-dark deposit-button mb-2" for="process_82"><img
-                                            src="images/82.gif" align="absmiddle" style="width: 32px;"> Tether
+                                            src="{{asset('')}}upnl/images/82.gif" align="absmiddle" style="width: 32px;"> Tether
                                         ERC20</label></div>
 
                                 <div class="col-lg-4 col-6"><input type="radio" name="type" value="process_92"
                                         id="process_92" class="btn-check" checked=""><label
                                         class="btn btn-dark deposit-button mb-2" for="process_92"><img
-                                            src="images/92.gif" align="absmiddle" style="width: 32px;"> Tether
+                                            src="{{asset('')}}upnl/images/92.gif" align="absmiddle" style="width: 32px;"> Tether
                                         TRC20</label></div>
 
                                 <div class="col-lg-4 col-6"><input type="radio" name="type" value="process_102"
                                         id="process_102" class="btn-check" checked=""><label
                                         class="btn btn-dark deposit-button mb-2" for="process_102"><img
-                                            src="images/102.gif" align="absmiddle" style="width: 32px;"> Tether
+                                            src="{{asset('')}}upnl/images/102.gif" align="absmiddle" style="width: 32px;"> Tether
                                         BEP20</label></div>
 
                             </div>

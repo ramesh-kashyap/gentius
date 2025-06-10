@@ -169,17 +169,17 @@
                                 style="max-width: 190px!important;" alt width="157" height="30"></a></div>
                     <nav id="main-nav" class="main-nav modnav">
                         <ul id="menu-primary-menu" class="menu d-xl-none d-lg-none d-md-none">
-                            <li class="menu-item menu-item current-menu-item"><a href="?a=account">Dashboard</a></li>
-                            <li class="menu-item"><a href="?a=deposit">Deposit</a></li>
+                            <li class="menu-item menu-item current-menu-item"><a href="{{route('user.dashboard')}}">Dashboard</a></li>
+                            <li class="menu-item"><a href="{{route('user.invest')}}">Deposit</a></li>
                             <li class="menu-item"><a href="{{route('user.DepositHistory')}}">My
                                     Deposit</a></li>
                             <li class="menu-item"><a href="{{route('user.Withdraw')}}">Withdrawal</a></li>
-                            <li class="menu-item"><a href="?a=history">History</a></li>
-                            <li class="menu-item"><a href="?a=referals">Referrals</a></li>
-                            <li class="menu-item"><a href="?a=referallinks">Banners</a></li>
-                            <li class="menu-item"><a href="?a=edit_account">My
+                            <li class="menu-item"><a href="{{route('user.Withdraw-History')}}">History</a></li>
+                            <li class="menu-item"><a href="{{route('user.referral')}}">Referrals</a></li>
+                            <li class="menu-item"><a href="{{route('user.news')}}">Banners</a></li>
+                            <li class="menu-item"><a href="{{route('user.activities')}}">My
                                     Account</a></li>
-                            <li class="menu-item"><a href="?a=security">2FA
+                            <li class="menu-item"><a href="{{route('user.security')}}">2FA
                                     Settings</a></li>
                             <li class="menu-item"><a href="{{route('logout')}}">Logout</a></li>
                         </ul>
@@ -239,7 +239,6 @@
                                         style="width: 152.833px; margin-right: 30px;">
                                         <div class="icon-box-style4">
                                             <a href="{{route('user.invest')}}">
-                                            <a href="{{route('user.DepositHistory')}}">
                                                 <div class="icon-wrapper"><svg width="66" height="66"
                                                         viewBox="0 0 64 64" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg" id="top-up">
@@ -297,7 +296,7 @@
                                     <div class="swiper-slide" role="group" aria-label="4 / 9"
                                         style="width: 152.833px; margin-right: 30px;">
                                         <div class="icon-box-style4">
-                                            <a href="?a=history">
+                                            <a href="{{route('user.Withdraw-History')}}">
                                                 <div class="icon-wrapper"><svg width="66" height="66"
                                                         viewBox="0 0 32 32" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg" id="transaction-history">
@@ -328,7 +327,7 @@
                                                         </g>
                                                     </svg></div>
                                             </a>
-                                            <h6><a href="?a=history">History</a></h6>
+                                            <h6><a href="{{route('user.Withdraw-History')}}">History</a></h6>
                                         </div>
                                     </div>
                                     <div class="swiper-slide" role="group" aria-label="5 / 9"
