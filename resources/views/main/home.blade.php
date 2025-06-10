@@ -1,460 +1,393 @@
 
-                          @include('layouts.mainsite.header')
-
-<div class="hero">
-<div class="container">
-    <div class="row">
-        <div class="col-md-2 mb-3 mb-md-0">
-            <div class="social">
-                <!-- <a href="https://t.me/XYOLOW_FAM" target="_blank">
-                <img src="{{asset('')}}assets/images/tg.png" style="max-width: 1.7rem;">
-                </a>
-                <a href="https://t.me/XYOFLOW_HELPTEAM" target="_blank">
-                <img src="{{asset('')}}assets/images/tg.png" style="max-width: 1.7rem;">
-                </a>
-                <a href="https://x.com/FlowXyoFam" target="_blank">
-                <img src="{{asset('')}}assets/images/tw.png" style="max-width: 1.9rem;">
-                </a>
-                <a href="https://h-metrics.com/project/Helix Fund.com/" target="_blank">
-                <img src="{{asset('')}}assets/images/hm.png" style="max-width: 1.7rem;">
-                </a> -->
+        <div class="mobile-menu">
+            <div class="menu-backdrop"></div>
+            <div class="close-btn"><i class="fas fa-times"></i></div>
+            <nav class="menu-box">
+                <div class="nav-logo"><a href="index%EF%B9%96a=home.html"><img src="assets/images/logo.png" alt="" title=""></a></div>
+                <div class="menu-outer"></div>
+            </nav>
+        </div>
+        <section class="banner-two">
+            <div class="pattern-layer">
+                <div class="pattern-1" style="background-image: url(assets/images/shape/shape-45.png);"></div>
+                <div class="pattern-2 zoom-fade" style="background-image: url(assets/images/shape/shape-2.png);"></div>
+                <div class="pattern-3 rotate-me" style="background-image: url(assets/images/shape/shape-3.png);"></div>
             </div>
-        </div>
-        <div class="col-md-9 mb-3 mb-md-0">
-            <h1 style="null">Your <span class="gradient-text">Gateway</span> to <br> Consistent <span class="gradient-text">Crypto </span> Flow</h1>
-            <p class="text-center" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">Join the next generation of crypto investors and grow your wealth in the
-                Helix Fund ecosystem.</p>
-            <div class="d-flex justify-content-center">
-                <a href="{{route('register')}}" class="button" style="translate: none; rotate: none; scale: none; transform: translate(0px, 20px); opacity: 1;">Join Us</a>
-            </div>
-        </div>
-        <div class="col-md-2 mb-3 mb-md-0"></div>
-    </div>
-</div>
-</div>
-<div class="about-us">
-<div class="container">
-    <div class="row mb-6">
-        <div class="col-12 text-start">
-            <h2 style="translate: none; rotate: none; scale: none;  transform: translate(0px, 30px);margin-bottom: 50px;">About <span class="gradient-text">Us</span></h2>
-            <a href="{{route('about-us')}}" class="text-white">Read More →</a>
-        </div>
-    </div>
-    <div class="row g-4">
-        <div class="col-md-8">
-            <div class="card h-100 bento-card featured" style="translate: none; rotate: none; scale: none;  transform: translate(0px, 50px);">
-                <div class="card-body">
-                    <div class="card-icon">
-                        <i class="bx bx-line-chart" style="font-size: 2rem; color: #72a1de"></i>
-                    </div>
-                    <h3>Investment Excellence</h3>
-                    <p>Helix Fund is a modern crypto investment platform designed for those who value speed, transparency, and consistent returns. Our mission is to simplify high-yield investing by offering automated, reliable, and well-structured plans that fit both beginners and experienced users.</p>
-                    <p>Founded by a team of crypto traders and blockchain enthusiasts, Helix Fund was built to give people an opportunity to grow their capital through carefully calculated strategies. We focus on short- and mid-term investment cycles, ensuring daily or hourly profitability, depending on the plan you choose.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card h-100 bento-card" style="translate: none; rotate: none; scale: none;  transform: translate(0px, 50px);">
-                <div class="card-body">
-                    <div class="card-icon">
-                        <i class="bx bx-shield-quarter" style="font-size: 2rem; color: #72a1de"></i>
-                    </div>
-                    <h4>Security First</h4>
-                    <p>Bank-grade security protocols protecting your assets 24/7</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card h-100 bento-card" style="translate: none; rotate: none; scale: none;  transform: translate(0px, 50px);">
-                <div class="card-body">
-                    <div class="card-icon">
-                        <i class="bx bx-support" style="font-size: 2rem; color: #72a1de"></i>
-                    </div>
-                    <h4>Online Help Team</h4>
-                    <p>Expert assistance available round the clock for all your needs</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-8">
-            <div class="card h-100 bento-card" style="translate: none; rotate: none; scale: none;  transform: translate(0px, 50px);">
-                <div class="card-body">
-                    <div class="card-icon">
-                        <i class="bx bx-wallet" style="font-size: 2rem; color: #72a1de"></i>
-                    </div>
-                    <h3>Diverse Portfolio</h3>
-                    <p>With a commitment to clear communication, instant withdrawals, and a smooth user experience, Helix Fund brings together technology, trust, and performance — all in one seamless platform. Our community grows every day, and we’re excited to help more people stay in the flow of the crypto world.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-
-<section class="unique-section">
-    <div class="container">
-        <div class="text-center">
-        <h1>Investment <span class="gradient-text">Plans</span></h1>
-        <p class="lead mt-4 mb-5" style="color: rgba(255, 255, 255, 0.9); max-width: 800px; margin: 0 auto;">
-            Choose the perfect investment strategy to maximize your crypto earnings
-        </p>
-    </div>
-        <div class="row g-4">
-            <div class="col-lg-4">
-                <div class="card h-100 bento-card plan-card" style="translate: none; rotate: none; scale: none;   transform: translate(0px, 50px);">
-                    <div class="card-body text-center">
-                        <div class="card-icon mx-auto">
-                            <i class="bx bx-rocket" style="font-size: 2.5rem; color: #72a1de"></i>
+            <div class="auto-container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="content-box">
+                            <div class="sub-title-two"><span>Secure</span> Trusted Investment</div>
+                            <h2>Your Gateway to Profitable DEX Trading</h2>
+                            <h3>Welcome to GENTIUS LTD, a cutting-edge platform for automated trading and decentralized asset management on the blockchain.</h3><br><br>
+                            <div class="btn-box"><a href="index%EF%B9%96a=signup.html" class="theme-btn"><span>Get Started</span></a></div>
                         </div>
-                        <h3 class="gradient-text mb-4">HF-1</h3>
-                        <div class="price-wrap mb-4">
-                        <span class="price">1.25-1.50</span>
-                        <span class="currency">%</span>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="image-box">
+                            <div class="shape">
+                                <div class="shape-1" style="background-image: url(assets/images/icons/bitcoin-6.png);"></div>
+                                <div class="shape-2" style="background-image: url(assets/images/icons/bitcoin-7.png);"></div>
+                                <div class="shape-3" style="background-image: url(assets/images/icons/bitcoin-8.png);"></div>
+                                <div class="shape-4" style="background-image: url(assets/images/icons/bitcoin-9.png);"></div>
+                            </div>
+                            <figure class="image float-bob-y"><img src="assets/images/resource/vector-8.png" alt=""></figure>
                         </div>
-                        <ul class="features-list">
-                            <li><i class="bx bx-check"></i> Daily Return</li>
-                            <li><i class="bx bx-check"></i>  2 Trade Assigned</li>
-                            <li><i class="bx bx-check"></i>No referrals Needed</li>
-                            <li><i class="bx bx-check"></i> Deposit $10 - $100</li>
-                            <li><i class="bx bx-check"></i> Min Withdrawal : $10</li>
-                        </ul>
-                        <a href="{{route('register')}}" class="button mt-4">Start Investing</a>
                     </div>
                 </div>
             </div>
-
-            <div class="col-lg-4">
-                <div class="card h-100 bento-card plan-card featured" style="translate: none; rotate: none; scale: none;   transform: translate(0px, 50px);">
-                    <div class="card-body text-center">
-                        <div class="card-icon mx-auto">
-                            <i class="bx bx-diamond" style="font-size: 2.5rem; color: #72a1de"></i>
+        </section>
+        <section class="funfact-two funfact-section text-center">
+            <div class="auto-container">
+                <div class="inner-container">
+                    <div class="funfact-block-one">
+                        <div class="inner-box">
+                            <div class="count-outer"><span class="odometer" data-count="11480">00</span><span class="symble">$</span></div>
+                            <p>Total Deposited</p>
                         </div>
-                        <h3 class="gradient-text mb-4">HF -2</h3>
-                        <div class="price-wrap mb-4">
-                            <span class="price">1.55-2.00</span>
-                            <span class="currency">%</span>
+                    </div>
+                    <div class="funfact-block-one">
+                        <div class="inner-box">
+                            <div class="count-outer"><span class="odometer" data-count="1435.38">00</span><span class="symble">$</span></div>
+                            <p>Total Withdrawals</p>
                         </div>
-                        <ul class="features-list">
-                             <li><i class="bx bx-check"></i> Daily Return</li>
-                            <li><i class="bx bx-check"></i> 4 Trade Assigned</li>
-                            <li><i class="bx bx-check"></i> Requires 5 Valid referrals</li>
-                            <li><i class="bx bx-check"></i> Deposit $200 - $300</li>
-                            <li><i class="bx bx-check"></i> Min Withdrawal : $10</li>
-                        </ul>
-                        <a href="{{route('register')}}" class="button mt-4">Start Investing</a>
+                    </div>
+                    <div class="funfact-block-one">
+                        <div class="inner-box">
+                            <div class="count-outer"><span class="odometer" data-count="143">00</span></div>
+                            <p>Total Investors</p>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="col-lg-4">
-                <div class="card h-100 bento-card plan-card" style="translate: none; rotate: none; scale: none;   transform: translate(0px, 50px);">
-                    <div class="card-body text-center">
-                        <div class="card-icon mx-auto">
-                            <i class="bx bx-crown" style="font-size: 2.5rem; color: #72a1de"></i>
+        </section>
+        <section id="Investments" class="pricing-two">
+            <div class="pattern-layer">
+                <div class="pattern-1" style="background-image: url(assets/images/shape/shape-49.png);"></div>
+                <div class="pattern-2" style="background-image: url(assets/images/shape/shape-49.png);"></div>
+            </div>
+            <div class="auto-container">
+                <div class="section-title text-center"><span class="sub-title-two">Auto-Trading</span>
+                    <h2>Choose Your Investment Strategy</h2>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-lg-4 col-md-6 col-sm-12 news-block">
+                        <div class="pricing-block-two">
+                            <div class="upper-box">
+                                <div class="icon-box"><img src="assets/images/icons/icon-17.svg" alt=""></div>
+                                <p>Skilled</p>
+                                <h3>1.1% - 3.3%<span style="margin-bottom: 23px;font-weight: 700;font-size: 16px;line-height: 26px;"> Daily</span></h3>
+                            </div>
+                            <div class="content-box">
+                                <h2>$20<span>  and more</span></h2>
+                                <h3>What’s included</h3>
+                                <ul class="feature-list clearfix">
+                                    <li>Starts from 20 USDT</li>
+                                    <li>Deposit refund</li>
+                                    <li>Deposit term 15 days</li>
+                                    <li>Daily Guaranteed Profit</li>
+                                    <li>Cancel anytime 8%</li>
+                                    <li>Ref.com 6%-3%-1%</li>
+                                </ul><a href="index%EF%B9%96a=signup.html">Start today!</a></div>
                         </div>
-                        <h3 class="gradient-text mb-4">HF-3</h3>
-                        <div class="price-wrap mb-4">
-                            <span class="price">2.25-2.50</span>
-                            <span class="currency">%</span>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 news-block">
+                        <div class="pricing-block-two active-block">
+                            <div class="upper-box">
+                                <div class="icon-box"><img src="assets/images/icons/icon-19.svg" alt=""></div>
+                                <p>Legend</p>
+                                <h3>4.5% - 6.5%<span style="margin-bottom: 23px;font-weight: 700;font-size: 16px;line-height: 26px;"> Daily</span></h3>
+                            </div>
+                            <div class="content-box">
+                                <h2>$50<span> and more</span></h2>
+                                <h3>What’s included</h3>
+                                <ul class="feature-list clearfix">
+                                    <li>Starts from 50 USDT</li>
+                                    <li>Daily Guaranteed Profit</li>
+                                    <li>Deposit included</li>
+                                    <li>Deposit term 30 days</li>
+                                    <li>Cancel anytime 10%</li>
+                                    <li>Ref.com 6%-3%-1%</li>
+                                </ul><a href="index%EF%B9%96a=signup.html">Start today!</a></div>
                         </div>
-                        <ul class="features-list">
-                            <li><i class="bx bx-check"></i> Daily Return</li>
-                            <li><i class="bx bx-check"></i> 6 Trade Assigned</li>
-                            <li><i class="bx bx-check"></i> Requires 10 Valid referrals</li>
-                            <li><i class="bx bx-check"></i> Deposit $400 - $500</li>
-                            <li><i class="bx bx-check"></i> Min Withdrawal : $10</li>
-                        </ul>
-                        <a href="{{route('register')}}" class="button mt-4">Start Investing</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 news-block">
+                        <div class="pricing-block-two">
+                            <div class="upper-box">
+                                <div class="icon-box"><img src="assets/images/icons/icon-20.svg" alt=""></div>
+                                <p>Expert</p>
+                                <h3>8.2% - 10%<span style="margin-bottom: 23px;font-weight: 700;font-size: 16px;line-height: 26px;"> Daily</span></h3>
+                            </div>
+                            <div class="content-box">
+                                <h2>$250<span> and more</span></h2>
+                                <h3>What’s included</h3>
+                                <ul class="feature-list clearfix">
+                                    <li>Starts from 250 USDT</li>
+                                    <li>Daily Guaranteed Profit</li>
+                                    <li>Deposit included</li>
+                                    <li>Deposit term 20 days</li>
+                                    <li>Cancel anytime 13%</li>
+                                    <li>Ref.com 6%-3%-1%</li>
+                                </ul><a href="index%EF%B9%96a=signup.html">Start today!</a></div>
+                        </div>
                     </div>
                 </div>
             </div>
-            
-          
-        </div>
-    </div>
-</section>
-
-<!--
-<div class="statistics">
-<div class="container">
-    <div class="row">
-        <div class="col-md-3 mb-3 mb-md-0">
-            <div class="stats-item">
-                <div class="stats-icon">
-                    <i class='bx bx-calendar'></i>
-                </div>
-                <div class="d-block">
-                    <h4 class="m-0 gradient-text">1</h4>
-                    <p class="m-0">Days Online</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 mb-3 mb-md-0">
-            <div class="stats-item">
-                <div class="stats-icon">
-                    <i class='bx bx-user-voice'></i>
-                </div>
-                <div class="d-block">
-                    <h4 class="m-0 gradient-text"></h4>
-                    <p class="m-0">Total Investors</p>
+        </section>
+        <section id="About_Us" class="about-section">
+            <div class="auto-container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 col-md-12 col-sm-12 image-column">
+                        <div class="image-box">
+                            <div class="image-shape">
+                                <div class="shape-1 rotate-me" style="background-image: url(assets/images/shape/shape-5.png);"></div>
+                                <div class="shape-2" style="background-image: url(assets/images/shape/shape-6.png);"></div>
+                                <div class="shape-3" style="background-image: url(assets/images/shape/shape-7.png);"></div>
+                                <div class="shape-4 float-bob-x" style="background-image: url(assets/images/shape/shape-8.png);"></div>
+                            </div>
+                            <figure class="image float-bob-y"><img src="assets/images/resource/vector-2.png" alt=""></figure>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 col-sm-12 content-column">
+                        <div class="content-box">
+                            <div class="content-shape" style="background-image: url(assets/images/shape/shape-10.png);"></div>
+                            <div class="section-title"><span class="sub-title">About Us</span>
+                                <h2 style="font-size: 35px;">GENTIUS LTD – AI-Powered Trading for Secure and Profitable Investments</h2>
+                            </div>
+                            <div class="text-box">
+                                <p>GENTIUS LTD is an advanced AI-driven platform that leverages intelligent trading bots to analyze decentralized exchanges (DEX) and execute trades with unmatched speed and precision. This cutting-edge technology ensures consistent
+                                    daily returns while eliminating the risks of manual trading and fraudulent schemes.<br><br> Earn 1.1%-10% daily profits effortlessly—GENTIUS LTD handles the complexities of crypto trading while you enjoy a secure and seamless
+                                    investment experience.<br><br>Join GENTIUS LTD today and discover a smarter, safer, and more profitable way to invest in crypto!</p><a href="https://find-and-update.company-information.service.gov.uk/company/16406497" class="theme-btn">Check Company<i class="icon-18"></i></a></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-3 mb-3 mb-md-0">
-            <div class="stats-item">
-                <div class="stats-icon">
-                    <i class='bx bxs-wallet-alt'></i>
-                </div>
-                <div class="d-block">
-                <span>$</span><h4 class="m-0 gradient-text"></h4>
-                    <p class="m-0">Investments</p>
-                </div>
+        </section>
+        <section class="service-two">
+            <div class="pattern-layer">
+                <div class="pattern-1" style="background-image: url(assets/images/shape/shape-47.png);"></div>
+                <div class="pattern-2" style="background-image: url(assets/images/shape/shape-47.png);"></div>
             </div>
-        </div>
-        <div class="col-md-3 mb-3 mb-md-0">
-            <div class="stats-item">
-                <div class="stats-icon">
-                    <i class='bx bx-wallet' ></i>
+            <div class="auto-container">
+                <div class="section-title text-center"><span class="sub-title-two">Advantages</span>
+                    <h2>We offer exceptional features</h2>
                 </div>
-                <div class="d-block">
-                <span>$</span><h4 class="m-0 gradient-text"></h4>
-                    <p class="m-0">Paidout</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-<div class="transacrions">
-<div class="container">
-    <div class="row">
-        <div class="col-md-6 mb-3 mb-md-0">
-            <div class="card">
-                <div class="card-header">
-                    <h3>Latest Deposits</h3>
-                </div>
-                <div class="card-body">
-                                    
+                <div class="inner-container">
+                    <div class="row clearfix">
+                        <div class="col-lg-4 col-md-6 col-sm-12 service-block">
+                            <div class="service-block-two">
+                                <div class="inner-box">
+                                    <div class="block-shape" style="background-image: url(assets/images/shape/shape-46.png);"></div>
+                                    <div class="icon-box">
+                                        <div class="icon"><img src="assets/images/icons/icon-11.svg" alt=""></div>
+                                        <div class="icon-bar"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></div>
                                     </div>
-            </div>
-        </div>
-        <div class="col-md-6 mb-3 mb-md-0">
-            <div class="card">
-                <div class="card-header">
-                    <h3>Latest Withdrawals</h3>
-                </div>
-                <div class="card-body">
-                                    
+                                    <h3><a href="#">Flexible Plans</a></h3>
+                                    <p>Select from flexible plans that offer the freedom to cancel anytime after the first 24 hours, subject to a 8-13% fee.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 service-block">
+                            <div class="service-block-two">
+                                <div class="inner-box">
+                                    <div class="block-shape" style="background-image: url(assets/images/shape/shape-46.png);"></div>
+                                    <div class="icon-box">
+                                        <div class="icon"><img src="assets/images/icons/icon-12.svg" alt=""></div>
+                                        <div class="icon-bar"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></div>
                                     </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
--->
-
-
-<div class="referrals">
-<div class="container">
-    <div class="row mb-4">
-        <div class="col-12 text-center">
-            <h2 style="translate: none; rotate: none; scale: none;   transform: translate(0px, 30px);">Referral Program</h2>
-            <p class="lead" style="translate: none; rotate: none; scale: none;   transform: translate(0px, 20px);">Earn extra rewards by inviting other people. </p><h3 class="gradient-text">Referral rewards include balance reinvests.</h3><p></p>
-        </div>
-    </div>
-    <div class="row g-4">
-        <div class="col-md-4">
-            <div class="card h-100 bento-card referral-card" style="translate: none; rotate: none; scale: none;   transform: translate(0px, 50px);">
-                <div class="card-body text-center">
-                    <div class="card-icon">
-                        <i class="bx bx-medal" style="font-size: 2.5rem; color: #72a1de"></i>
-                    </div>
-                    <h3 class="gradient-text">Level 1</h3>
-                    <div class="commission">
-                        <span class="percentage">5%</span>
-                        <p class="mb-3">Level Referral Commission</p>
-                    </div>
-                    <p>Earn a 5% commission on the earnings of your direct referrals (Team Referrals 1)</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card h-100 bento-card referral-card featured" style="translate: none; rotate: none; scale: none;   transform: translate(0px, 50px);">
-                <div class="card-body text-center">
-                    <div class="card-icon">
-                        <i class="bx bxs-medal" style="font-size: 2.5rem; color: #72a1de"></i>
-                    </div>
-                    <h3 class="gradient-text">Level 2</h3>
-                    <div class="commission">
-                        <span class="percentage">10%</span>
-                        <p class="mb-3">Second Level Commission</p>
-                    </div>
-                    <p>Earn a 2% commission on the earnings of your direct referrals (Team Referrals 2)</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card h-100 bento-card referral-card" style="translate: none; rotate: none; scale: none;   transform: translate(0px, 50px);">
-                <div class="card-body text-center">
-                    <div class="card-icon">
-                        <i class="bx bxs-badge-check" style="font-size: 2.5rem; color: #72a1de"></i>
-                    </div>
-                    <h3 class="gradient-text">Level 3</h3>
-                    <div class="commission">
-                        <span class="percentage">15%</span>
-                        <p class="mb-3">Third Level Commission</p>
-                    </div>
-                    <p>Earn a 15% commission on the earnings of your direct referrals (Team Referrals 3)</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br>
-     <div class="row g-4">
-        <div class="col-md-4">
-            <div class="card h-100 bento-card referral-card" style="translate: none; rotate: none; scale: none;   transform: translate(0px, 50px);">
-                <div class="card-body text-center">
-                    <div class="card-icon">
-                        <i class="bx bx-medal" style="font-size: 2.5rem; color: #72a1de"></i>
-                    </div>
-                    <h3 class="gradient-text">Level 4</h3>
-                    <div class="commission">
-                        <span class="percentage">20%</span>
-                        <p class="mb-3">Level Referral Commission</p>
-                    </div>
-                    <p>Earn a 20% commission on the earnings of your direct referrals (Team Referrals 4)</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card h-100 bento-card referral-card featured" style="translate: none; rotate: none; scale: none;   transform: translate(0px, 50px);">
-                <div class="card-body text-center">
-                    <div class="card-icon">
-                        <i class="bx bxs-medal" style="font-size: 2.5rem; color: #72a1de"></i>
-                    </div>
-                    <h3 class="gradient-text">Level 5</h3>
-                    <div class="commission">
-                        <span class="percentage">25%</span>
-                        <p class="mb-3">Second Level Commission</p>
-                    </div>
-                    <p>Earn a 25% commission on the earnings of your direct referrals (Team Referrals 5)</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card h-100 bento-card referral-card" style="translate: none; rotate: none; scale: none;   transform: translate(0px, 50px);">
-                <div class="card-body text-center">
-                    <div class="card-icon">
-                        <i class="bx bxs-badge-check" style="font-size: 2.5rem; color: #72a1de"></i>
-                    </div>
-                    <h3 class="gradient-text">Level 6</h3>
-                    <div class="commission">
-                        <span class="percentage">30%</span>
-                        <p class="mb-3">Third Level Commission</p>
-                    </div>
-                    <p>Earn a 30% commission on the earnings of your direct referrals (Team Referrals 6)</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-4">
-            <div class="card h-100 bento-card referral-card" style="translate: none; rotate: none; scale: none;   transform: translate(0px, 50px);">
-                <div class="card-body text-center">
-                    <div class="card-icon">
-                        <i class="bx bxs-badge-check" style="font-size: 2.5rem; color: #72a1de"></i>
-                    </div>
-                    <h3 class="gradient-text">Level 7</h3>
-                    <div class="commission">
-                        <span class="percentage">35%</span>
-                        <p class="mb-3">Third Level Commission</p>
-                    </div>
-                    <p>Earn a 35% commission on the earnings of your direct referrals (Team Referrals 7)</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row " style="margin-top: 80px;">
-        <div class="col-12 text-center">
-            <a href="{{route('register')}}" class="button">Start Earning Now</a>
-        </div>
-    </div>
-</div>
-</div>
-<div class="cta-section">
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <div class="card bento-card featured text-center" style="translate: none; rotate: none; scale: none;   transform: translate(0px, 50px);">
-                <div class="card-body">
-                    <h2>Ready to Start Your <span class="gradient-text">Crypto Journey?</span></h2>
-                    <p class="lead mb-4">Join thousands of successful investors in the Helix Fund ecosystem</p>
-                    <div class="cta-buttons">
-                        <a href="{{route('register')}}" class="button" style="translate: none; rotate: none; scale: none;   transform: translate(0px, 30px);">Create Account</a>
+                                    <h3><a href="#">Pro Trading Bots</a></h3>
+                                    <p>Utilize cutting-edge AI bots that execute trades 1,000 times faster than manual trading, maximizing precision and profitability.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 service-block">
+                            <div class="service-block-two">
+                                <div class="inner-box">
+                                    <div class="block-shape" style="background-image: url(assets/images/shape/shape-46.png);"></div>
+                                    <div class="icon-box">
+                                        <div class="icon"><img src="assets/images/icons/icon-13.svg" alt=""></div>
+                                        <div class="icon-bar"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></div>
+                                    </div>
+                                    <h3><a href="#">Guaranteed Profits</a></h3>
+                                    <p>Experience financial security with guaranteed minimum daily profits, safeguarding your investment from major losses.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 service-block">
+                            <div class="service-block-two">
+                                <div class="inner-box">
+                                    <div class="block-shape" style="background-image: url(assets/images/shape/shape-46.png);"></div>
+                                    <div class="icon-box">
+                                        <div class="icon"><img src="assets/images/icons/icon-14.svg" alt=""></div>
+                                        <div class="icon-bar"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></div>
+                                    </div>
+                                    <h3><a href="#">Transparency</a></h3>
+                                    <p>Take advantage of our dedication to transparency, providing clear insights into our trading activities and performance.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 service-block">
+                            <div class="service-block-two">
+                                <div class="inner-box">
+                                    <div class="block-shape" style="background-image: url(assets/images/shape/shape-46.png);"></div>
+                                    <div class="icon-box">
+                                        <div class="icon"><img src="assets/images/icons/icon-15.svg" alt=""></div>
+                                        <div class="icon-bar"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></div>
+                                    </div>
+                                    <h3><a href="#">Scam Protection</a></h3>
+                                    <p>Our AI checks for fraud risks like rug pulls and scam tokens, ensuring your funds are protected and only invested in verified assets.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 service-block">
+                            <div class="service-block-two">
+                                <div class="inner-box">
+                                    <div class="block-shape" style="background-image: url(assets/images/shape/shape-46.png);"></div>
+                                    <div class="icon-box">
+                                        <div class="icon"><img src="assets/images/icons/icon-16.svg" alt=""></div>
+                                        <div class="icon-bar"><span class="bar-1"></span><span class="bar-2"></span><span class="bar-3"></span></div>
+                                    </div>
+                                    <h3><a href="#">User-Friendly</a></h3>
+                                    <p>Effortlessly manage your account, monitor your investments, and withdraw funds with ease using our intuitive platform.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-</div>
-          @include('layouts.mainsite.footer')
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-<script src="{{asset('')}}assets/js/gsap.min.js"></script>
-<script src="{{asset('')}}assets/js/ScrollTrigger.min.js"></script>
-<script src="{{asset('')}}assets/js/SplitText.min.js"></script>
-<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-<script src="{{asset('')}}assets/js/app.js"></script>
-
-
-<script>
-    window.addEventListener('load', function() {
-    // All resources (images, scripts, stylesheets, etc.) are loaded
-    const preloaderContainer = document.querySelector('.preloader-container');
-    const content = document.querySelector('.content');
-
-    if (preloaderContainer) {
-        // Add the 'hidden' class to trigger the fade-out animation
-        preloaderContainer.classList.add('hidden');
-
-        // Optional: If you want to completely remove the preloader from the DOM
-        // after the transition, you can listen for the 'transitionend' event.
-        preloaderContainer.addEventListener('transitionend', function() {
-            if (preloaderContainer.style.opacity === '0' || getComputedStyle(preloaderContainer).opacity === '0') {
-                 preloaderContainer.style.display = 'none'; // Or preloaderContainer.remove();
-            }
-        }, { once: true }); // {once: true} ensures the event listener is removed after it fires
-    }
-
-    if (content) {
-        content.style.display = 'block'; // Or any other display type you need, e.g., 'flex'
-        // If you used opacity for content:
-        // content.style.opacity = '1';
-        // content.style.visibility = 'visible';
-    }
-});
-
-// Fallback in case 'load' event doesn't fire or takes too long (e.g., for broken images)
-// You might want to adjust the timeout duration
-setTimeout(function() {
-    const preloaderContainer = document.querySelector('.preloader-container');
-    const content = document.querySelector('.content');
-
-    if (preloaderContainer && !preloaderContainer.classList.contains('hidden')) {
-        console.warn("Preloader timeout reached. Forcing hide.");
-        preloaderContainer.classList.add('hidden');
-        if (preloaderContainer.style.opacity === '0' || getComputedStyle(preloaderContainer).opacity === '0') {
-            preloaderContainer.style.display = 'none';
-        }
-        if (content) {
-            content.style.display = 'block';
-        }
-    }
-}, 10000); // 10 seconds timeout as an example
-</script>
-
-
-
-
-
-</body></html>
+        </section>
+        <section id="Partners" class="chooseus-section">
+            <div class="auto-container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-12 col-sm-12 content-column">
+                        <div class="content-box">
+                            <div class="content-shape zoom-fade" style="background-image: url(assets/images/shape/shape-11.png);"></div>
+                            <div class="section-title"><span class="sub-title">Affiliate Program</span>
+                                <h2>Empowering Your Growth</h2>
+                            </div>
+                            <div class="text-box">
+                                <p>Invite your friends to GENTIUS LTD and unlock exclusive rewards! Every registered user gets a unique referral link to bring others on board. <br>With our Referral Program, you can increase your earnings effortlessly, whether
+                                    you're actively trading or simply spreading the word.<br><br>Start referring today and watch your income grow!</p>
+                                <div class="inner-box clearfix">
+                                    <div class="single-item">
+                                        <div class="inner"><span>6%</span>
+                                            <p>Level 1</p>
+                                        </div>
+                                    </div>
+                                    <div class="single-item">
+                                        <div class="inner"><span>3%</span>
+                                            <p>Level 2</p>
+                                        </div>
+                                    </div>
+                                    <div class="single-item">
+                                        <div class="inner"><span>1%</span>
+                                            <p>Level 3</p>
+                                        </div>
+                                    </div>
+                                </div><a href="index%EF%B9%96a=signup.html" class="theme-btn">Sign Up and Start!</a></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-12 col-sm-12 image-column">
+                        <div class="image-box">
+                            <div class="image-shape">
+                                <div class="shape-1" style="background-image: url(assets/images/shape/shape-6.png);"></div>
+                                <div class="shape-2" style="background-image: url(assets/images/shape/shape-12.png);"></div>
+                                <div class="shape-3 zoom-fade" style="background-image: url(assets/images/shape/shape-13.png);"></div>
+                                <div class="shape-4 float-bob-y" style="background-image: url(assets/images/shape/shape-14.png);"></div>
+                                <div class="shape-5" style="background-image: url(assets/images/shape/shape-7.png);"></div>
+                            </div>
+                            <figure class="image"><img src="assets/images/resource/vector-3.png" alt=""></figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="faq" class="faq-two faq-section">
+            <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-51.png);"></div>
+            <div class="auto-container">
+                <div class="section-title text-center"><span class="sub-title-two">FAQ</span>
+                    <h2>Frequently Asked Question</h2>
+                </div>
+                <div class="accordion-inner">
+                    <div class="content-shape">
+                        <div class="shape-1 zoom-fade" style="background-image: url(assets/images/shape/shape-17.png);"></div>
+                        <div class="shape-2 zoom-fade" style="background-image: url(assets/images/shape/shape-18.png);"></div>
+                    </div>
+                    <ul class="accordion-box">
+                        <li class="accordion block active-block">
+                            <div class="acc-btn active">
+                                <h3>What is GENTIUS LTD ?</h3>
+                            </div>
+                            <div class="acc-content current">
+                                <div class="content">
+                                    <p>GENTIUS LTD is an advanced AI-driven platform that leverages intelligent trading bots to analyze decentralized exchanges (DEX) and execute trades with unmatched speed and precision.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="accordion block">
+                            <div class="acc-btn">
+                                <h3>What makes GENTIUS LTD different from trading alone?</h3>
+                            </div>
+                            <div class="acc-content">
+                                <div class="content">
+                                    <p>GENTIUS LTD offers advanced trading bots, guaranteed profits, and comprehensive fraud detection, making it more efficient and secure compared to trading alone. Individual traders often face speed disadvantages, risks of
+                                        pump and dump schemes, and rug pulls, which GENTIUS LTD mitigates.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="accordion block">
+                            <div class="acc-btn">
+                                <h3>What are the different trading plans available on GENTIUS LTD?</h3>
+                            </div>
+                            <div class="acc-content">
+                                <div class="content">
+                                    <p>GENTIUS LTD offers four trading plans: Skilled, Expert, and Legend. Each plan has different minimum and maximum deposit requirements and daily profit rates, ranging from 1.1% to 10%.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="accordion block">
+                            <div class="acc-btn">
+                                <h3>Can I cancel my investment plan at any time?</h3>
+                            </div>
+                            <div class="acc-content">
+                                <div class="content">
+                                    <p>Yes, you can cancel your deposit at any time, this process takes 24 hours. When canceling an investment, a fee of 8-13% will be charged depending on the plan you choose.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="accordion block">
+                            <div class="acc-btn">
+                                <h3>What payment methods are acceptable?</h3>
+                            </div>
+                            <div class="acc-content">
+                                <div class="content">
+                                    <p>We accept currencies such as Bitcoin, Litecoin, Dogecoin
+                                      Ethereum, Tether TRC20, Tether BEP20, Ripple, BNB, Tron, Tether ERC20 and ePayCore. Minimum payout for Bitcoin is $10 for the rest $3 and ePayCore $0.1. No withdrawal fee. Payments are made instantly.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="accordion block">
+                            <div class="acc-btn">
+                                <h3>Is GENTIUS LTD safe and secure for my investments?</h3>
+                            </div>
+                            <div class="acc-content">
+                                <div class="content">
+                                    <p>Yes, GENTIUS LTD operates on decentralized exchanges, ensuring transparency and security. Our platform uses AI to analyze the reliability of cryptocurrencies, protecting your funds from scams like rug pulls and fraud. Additionally,
+                                        we use top-tier security measures to safeguard your investments.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="accordion block">
+                            <div class="acc-btn">
+                                <h3>How does the GENTIUS LTD Referral Program work?</h3>
+                            </div>
+                            <div class="acc-content">
+                                <div class="content">
+                                    <p>When you join GENTIUS LTD, you receive a unique referral link that you can share with others. You’ll earn commissions based on three levels of referrals: 5% -3% - 1%<br>The Referral Program is an easy way to increase your earnings, whether you’re investing or just referring others to the platform.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
