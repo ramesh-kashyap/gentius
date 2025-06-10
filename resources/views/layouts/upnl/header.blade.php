@@ -156,10 +156,7 @@
             transform: rotate(90deg)
         }
     </style>
-    <link type="text/css" rel="stylesheet" charset="UTF-8"
-        href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.NJgGN_yGIWM.L.W.O/am=AAY/d=0/rs=AN8SPfrTSMIvWAFISYN4u74dPJrX0HgUsw/m=el_main_css">
-    <script type="text/javascript" charset="UTF-8"
-        src="https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.en_US.wX7qQ5EH6oI.O/am=ACA/d=1/exm=el_conf/ed=1/rs=AN8SPfrNtUAtY-e6eilwMrQxoU8LiA-1Hg/m=el_main"></script>
+
 </head>
 
 <body class="header-fixed inner-page faq-page" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0"
@@ -168,7 +165,7 @@
         <header id="header_main" class="header">
             <div class="container">
                 <div id="site-header-inner">
-                    <div class="header__logo"><a href="/"><img src="{{asset('')}}upnl/assets/images/logo.png"
+                    <div class=""><a href="/"><img src="{{asset('')}}upnl/assets/images/logo.png"
                                 style="max-width: 190px!important;" alt width="157" height="30"></a></div>
                     <nav id="main-nav" class="main-nav modnav">
                         <ul id="menu-primary-menu" class="menu d-xl-none d-lg-none d-md-none">
