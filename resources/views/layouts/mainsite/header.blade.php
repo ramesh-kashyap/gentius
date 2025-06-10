@@ -68,14 +68,14 @@
                 <div class="auto-container">
                     <div class="outer-box">
                         <div class="logo-box">
-                            <figure class="logo"><a href="index%EF%B9%96a=home.html"><img src="assets/images/logo.png"style="max-width: 250px;" alt=""></a></figure>
+                            <figure class="logo"><a href="/"><img src="assets/images/logo.png"style="max-width: 250px;" alt=""></a></figure>
                         </div>
                         <div class="menu-area">
                             <nav class="main-menu">
                                 <!--Keep This Empty / Menu will come through Javascript-->
                             </nav>
                         </div>
-                        <div class="btn-box"><a href="index%EF%B9%96a=login.html">Sign In</a></div>
+                        <div class="btn-box"><a href="{{route('login')}}">Sign In</a></div>
                     </div>
                 </div>
             </div>
