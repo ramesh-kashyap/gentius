@@ -40,7 +40,7 @@ Route::get('/globaly_community', [App\Http\Controllers\Cron::class, 'globaly_com
 Route::get('/expire-bonus', [App\Http\Controllers\Cron::class, 'expireOldBonusInvestments'])->name('expire-bonus');
 
 
-Route::post('login', [App\Http\Controllers\Login::class, 'login'])->name('login');
+Route::post('login', [App\Http\Controllers\Login::class, 'loginAction'])->name('login');
 Route::get('forgot-password', [App\Http\Controllers\Login::class, 'forgot_password'])->name('forgot-password');
 Route::any('forgot_submit', [App\Http\Controllers\Login::class, 'forgot_password_submit'])->name('forgot_submit');
 Route::any('submitResetPassword', [App\Http\Controllers\Login::class, 'submitResetPassword'])->name('submitResetPassword');

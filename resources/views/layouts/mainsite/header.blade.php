@@ -51,17 +51,17 @@
                         <nav class="main-menu navbar-expand-md navbar-light">
                             <div class="collapse navbar-collapse show" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
-                                    <li><a href="index%EF%B9%96a=home.html">Home</a></li>
+                                    <li><a href="/">Home</a></li>
                                     <li><a href="#Investments">Investments</a></li>
                                     <li><a href="#About_Us">About Us</a></li>
                                     <li><a href="#Partners">Partners</a></li>
                                     <li><a href="#faq">FAQ</a></li>
-                                    <li><a href="index%EF%B9%96a=support.html">Contact</a></li> 
+                                    <li><a href="{{route('contact-us')}}">Contact</a></li> 
                                 </ul>
                             </div>
                         </nav>
                     </div>
-                    <div class="btn-box"><a href="index%EF%B9%96a=login.html">Sign In</a></div>
+                    <div class="btn-box"><a href="{{route('login')}}">Sign In</a></div>
                 </div>
             </div>
             <div class="sticky-header">

@@ -1,3 +1,4 @@
+@include('partials.notify')
 
         <footer class="main-footer">
             <div class="pattern-layer">

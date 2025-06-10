@@ -11,81 +11,126 @@ use App\Models\User;
 use App\Models\UserLogin;
 
 use DB;
+
 class Login extends Controller
 {
 
 
-    public function login(Request $request)
+    public function loginAction(Request $request)
     {
 
-            $validation =  Validator::make($request->all(), [
+        try {
+            // Step 1: Validate Input
+            $validation = Validator::make($request->all(), [
                 'username' => 'required|unique:users',
                 'password' => 'required|string',
-
             ]);
 
-       
-        //   if (isset($request->captcha)) {
-        //         if (!captchaVerify($request->captcha, $request->captcha_secret)) {
-        //             $notify[] = ['error', "Invalid Captcha"];
-        //             return back()->withNotify($notify)->withInput();
-        //         }
-        //     }
-            
-            $post_array  = $request->all();
+            if ($validation->fails()) {
+                $errorMessage = $validation->getMessageBag()->first();
+
+                Log::warning("Validation Failed", [
+                    'errors' => $validation->getMessageBag()->toArray(),
+                    'input' => $request->all(),
+                ]);
+
+                return Redirect::back()
+                    ->withErrors($errorMessage)
+                    ->withInput();
+            }
+
+            // Step 2: Extract credentials and attempt login
             $credentials = $request->only('username', 'password');
-
-
 
             if (Auth::attempt($credentials)) {
                 $user = Auth::user();
 
-                if($user->active_status=="Block")
-                {
-                Auth::logout();
-               return Redirect::back()->withErrors(array('You are Blocked by admin'));
+                // Step 3: Check if user is blocked
+                if ($user->active_status === "Block") {
+                    Auth::logout();
+
+                    Log::notice("Blocked User Attempt", [
+                        'user_id' => $user->id,
+                        'username' => $user->username,
+                        'ip' => $request->ip(),
+                    ]);
+
+                    return Redirect::back()
+                        ->withErrors(['You are Blocked by admin']);
                 }
 
+                // Step 4: Successful login
+                Log::info("User Login Success", [
+                    'user_id' => $user->id,
+                    'username' => $user->username,
+                    'ip' => $request->ip(),
+                ]);
+
+                // You can also trigger a frontend tray notification here
+                session()->flash('success', 'Login successfully');
+
                 return redirect()->route('user.dashboard');
+            } else {
+                // Step 5: Failed login attempt
+                Log::warning("Login Failed", [
+                    'username' => $request->input('username'),
+                    'ip' => $request->ip(),
+                ]);
 
-              // echo "credentials are invalid"; die;
+                return Redirect::back()
+                    ->withErrors(['Invalid Username & Password!']);
             }
-            else
-            {
-                // echo "credentials are invalid"; die;
-                return Redirect::back()->withErrors(array('Invalid Username & Password !'));
-            }
+        } catch (\Exception $e) {
+            // Step 6: Catch any unexpected exceptions
+            Log::error("Unexpected Error During Login", [
+                'message' => $e->getMessage(),
+                'line' => $e->getLine(),
+                'file' => $e->getFile(),
+                'trace' => $e->getTraceAsString(),
+                'input' => $request->all(),
+            ]);
 
+            return Redirect::back()
+                ->withErrors(['An unexpected error occurred. Please try again later.']);
         }
+    }
+
+    public function logout(Request $request)
+    {
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+
+        return redirect()->route('login');
+    }
+
 
 
 
     public function forgot_password()
     {
 
-    return view('auth.passwords.forgot-password');
-
+        return view('auth.passwords.forgot-password');
     }
 
 
     public function forgot_password_submit(Request $request)
     {
-         $validation =  Validator::make($request->all(), [
-                'email' => 'required',
+        $validation =  Validator::make($request->all(), [
+            'email' => 'required',
 
-            ]);
+        ]);
 
 
-        
-            
-        $credentials = User::where('email',$request->email)->first();
 
-        if ($credentials)
-        {
 
-           $userIpInfo = getIpInfo();
-           $userBrowserInfo =osBrowser();
-           $code = verificationCode(6);
+        $credentials = User::where('email', $request->email)->first();
+
+        if ($credentials) {
+
+            $userIpInfo = getIpInfo();
+            $userBrowserInfo = osBrowser();
+            $code = verificationCode(6);
 
             PasswordReset::where('email', $credentials->email)->delete();
 
@@ -106,33 +151,30 @@ class Login extends Controller
 
             //  ]);
 
-              $page_title = 'Account Recovery';
-             $userID = $credentials->id;
-            session()->put('pass_res_mail',$userID);
+            $page_title = 'Account Recovery';
+            $userID = $credentials->id;
+            session()->put('pass_res_mail', $userID);
             $notify[] = ['success', 'Password reset email sent successfully'];
             return redirect()->route('codeVerify')->withNotify($notify);
-        }
-        else{
+        } else {
             $notify[] = ['error', 'Invalid Username '];
             return redirect()->route('forgot-password')->withNotify($notify);
         }
-
-
-
     }
 
-    public function codeVerify(){
+    public function codeVerify()
+    {
         $page_title = 'Account Recovery';
         $userID = session()->get('pass_res_mail');
 
         $user_name = session()->get('username');
 
         if (!$userID) {
-            $notify[] = ['error','Opps! session expired'];
+            $notify[] = ['error', 'Opps! session expired'];
             return redirect()->route('forgot-password')->withNotify($notify);
         }
 
-        return view('auth.passwords.confirm',compact('page_title','userID','user_name'));
+        return view('auth.passwords.confirm', compact('page_title', 'userID', 'user_name'));
     }
 
 
@@ -140,7 +182,7 @@ class Login extends Controller
     {
         $request->validate(['code' => 'required', 'userID' => 'required']);
         $code = $request->code;
-        $userDetail=User::where('id',$request->userID)->first();
+        $userDetail = User::where('id', $request->userID)->first();
 
         if (PasswordReset::where('token', $code)->where('email', $userDetail->email)->count() != 1) {
             $notify[] = ['error', 'Invalid token'];
@@ -148,7 +190,7 @@ class Login extends Controller
         }
         $notify[] = ['success', 'You can change your password.'];
         session()->flash('fpass_email', $request->userID);
-        session()->put('resetMail',$request->userID);
+        session()->put('resetMail', $request->userID);
         return redirect()->route('resetPassword', $code)->withNotify($notify);
     }
 
@@ -156,7 +198,7 @@ class Login extends Controller
     public function resetPassword()
     {
         $page_title = "Forgot Password";
-    //   dd("hi");
+        //   dd("hi");
         return view('auth.passwords.resetPassword', compact('page_title'));
     }
 
@@ -165,32 +207,28 @@ class Login extends Controller
     public function submitResetPassword(Request $request)
     {
 
-    $request->validate(['password' => 'required|confirmed|min:5']);
+        $request->validate(['password' => 'required|confirmed|min:5']);
 
-       $userID = session()->get('resetMail');
+        $userID = session()->get('resetMail');
 
-    //    dd($userID);
-    //    die;
+        //    dd($userID);
+        //    die;
 
-       $user_name = session()->get('username');
+        $user_name = session()->get('username');
 
-       $user = User::where('id',$userID)->orderBy('id', 'DESC')->first();
+        $user = User::where('id', $userID)->orderBy('id', 'DESC')->first();
 
 
-       if (!$user) {
-        $notify[] = ['error','Opps! session expired'];
-        return redirect()->route('forgot-password')->withNotify($notify);
-       }
-       $password = password_hash($request->password, PASSWORD_DEFAULT);
+        if (!$user) {
+            $notify[] = ['error', 'Opps! session expired'];
+            return redirect()->route('forgot-password')->withNotify($notify);
+        }
+        $password = password_hash($request->password, PASSWORD_DEFAULT);
 
-       $user->password=$password;
-       $user->PSR=$request->password;
-       $user->save();
-       $notify[] = ['success', 'Your Password change Successfully.'];
-       return redirect()->route('login')->withNotify($notify);
-
+        $user->password = $password;
+        $user->PSR = $request->password;
+        $user->save();
+        $notify[] = ['success', 'Your Password change Successfully.'];
+        return redirect()->route('login')->withNotify($notify);
     }
-
-
-
 }

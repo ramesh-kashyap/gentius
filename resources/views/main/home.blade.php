@@ -1,3 +1,4 @@
+@include('layouts.mainsite.header')
 
         <div class="mobile-menu">
             <div class="menu-backdrop"></div>
@@ -391,3 +392,4 @@
                 </div>
             </div>
         </section>
+@include('layouts.mainsite.footer')
