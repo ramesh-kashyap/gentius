@@ -241,6 +241,7 @@
                                     <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 9"
                                         style="width: 152.833px; margin-right: 30px;">
                                         <div class="icon-box-style4">
+                                            <a href="{{route('user.invest')}}">
                                             <a href="{{route('user.DepositHistory')}}">
                                                 <div class="icon-wrapper"><svg width="66" height="66"
                                                         viewBox="0 0 64 64" fill="none"
@@ -256,7 +257,7 @@
                                                             color="#000" paint-order="fill markers stroke"></path>
                                                     </svg></div>
                                             </a>
-                                            <h6><a href="?a=deposit">Deposit</a></h6>
+                                            <h6><a href="{{route('user.invest')}}">Deposit</a></h6>
                                         </div>
                                     </div>
                                     <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 9"
@@ -336,7 +337,7 @@
                                     <div class="swiper-slide" role="group" aria-label="5 / 9"
                                         style="width: 152.833px; margin-right: 30px;">
                                         <div class="icon-box-style4">
-                                            <a href="?a=referals">
+                                            <a href="{{route('user.referral')}}">
                                                 <div class="icon-wrapper"><svg width="66" height="66"
                                                         viewBox="0 0 64 64" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg" id="customer-referral">
@@ -355,13 +356,13 @@
                                                         </g>
                                                     </svg></div>
                                             </a>
-                                            <h6><a href="?a=referals">Referrals</a></h6>
+                                            <h6><a href="{{route('user.referral')}}">Referrals</a></h6>
                                         </div>
                                     </div>
                                     <div class="swiper-slide" role="group" aria-label="6 / 9"
                                         style="width: 152.833px; margin-right: 30px;">
                                         <div class="icon-box-style4">
-                                            <a href="?a=referallinks">
+                                            <a href="{{route('user.news')}}">
                                                 <div class="icon-wrapper"><svg width="66" height="66"
                                                         viewBox="0 0 65 65" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg" id="banners">
@@ -397,13 +398,13 @@
                                                         </path>
                                                     </svg></div>
                                             </a>
-                                            <h6><a href="?a=referallinks">Banners</a></h6>
+                                            <h6><a href="{{route('user.news')}}">Banners</a></h6>
                                         </div>
                                     </div>
                                     <div class="swiper-slide" role="group" aria-label="7 / 9"
                                         style="width: 152.833px; margin-right: 30px;">
                                         <div class="icon-box-style4">
-                                            <a href="?a=edit_account">
+                                            <a href="{{route('user.activities')}}">
                                                 <div class="icon-wrapper"><svg width="66" height="66"
                                                         viewBox="0 0 48 48" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg" id="profile-settings">
@@ -415,14 +416,14 @@
                                                         </path>
                                                     </svg></div>
                                             </a>
-                                            <h6><a href="?a=edit_account">My
+                                            <h6><a href="{{route('user.activities')}}">My
                                                     Account</a></h6>
                                         </div>
                                     </div>
                                     <div class="swiper-slide" role="group" aria-label="8 / 9"
                                         style="width: 152.833px; margin-right: 30px;">
                                         <div class="icon-box-style4">
-                                            <a href="?a=security">
+                                            <a href="{{route('user.security')}}">
                                                 <div class="icon-wrapper"><svg width="66" height="66"
                                                         viewBox="0 0 512 512" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg" id="shield">
@@ -437,7 +438,7 @@
                                                         </path>
                                                     </svg></div>
                                             </a>
-                                            <h6><a href="?a=security">2FA
+                                            <h6><a href="{{route('user.security')}}">2FA
                                                     Settings</a></h6>
                                         </div>
                                     </div>

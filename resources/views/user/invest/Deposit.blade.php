@@ -21,7 +21,7 @@
                         <h6 class="title mb-3">Make a Deposit</h6>
 
 
-                        <script language="javascript">< !-
+                        <script language="javascript">
                                 function openCalculator(id) {
 
                                     w = 225; h = 400;
@@ -72,7 +72,7 @@
                                 }
                             }
                             var cps = {};
-                            -></script>
+                            </script>
 
 
 

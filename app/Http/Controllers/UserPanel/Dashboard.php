@@ -310,9 +310,9 @@ public function updatePopupCheck(Request $request)
 
     public function activities()
     {
-        $user=Auth::user();
-        $transaction_data = Activitie::where('user_id',$user->id)->orderBy('id', 'desc')->get();
-        $this->data['activities'] = $transaction_data;
+        // $user=Auth::user();
+        // $transaction_data = Activitie::where('user_id',$user->id)->orderBy('id', 'desc')->get();
+        // $this->data['activities'] = $transaction_data;
         $this->data['page'] = 'user.activities';
         return $this->dashboard_layout();
     
