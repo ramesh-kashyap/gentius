@@ -12,7 +12,7 @@
                                     <h5 class="heading">Your Referral Link</h5>
                                 </div>
                                 <div class="content linkbox">
-                                    <h6 class="reflinx" id="reflink">https://gentius.top/?ref=rameshk036</h6>
+                                    <h6 class="reflinx" id="reflink">{{route('registers')}}?ref={{Auth::user()->username}}</h6>
                                     <div class="td td2"><i onclick="copyToClipboard('reflink')"
                                             class="fa fa-copy cicon"></i></div>
                                 </div>

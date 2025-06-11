@@ -21,19 +21,19 @@
                                         <li>
                                             <p class="text baltxt">Account
                                                 Balance</p>
-                                            <p class="price myv">$0 USD</p>
+                                            <p class="price myv">${{ number_format(Auth::user()->available_balance(), 2) }}  </p>
                                         </li>
                                         <li>
                                             <p class="text baltxt">Total
                                                 Deposits</p>
                                             <p class="price myv">$0.00
-                                                USD</p>
+                                                </p>
                                         </li>
                                         <li>
                                             <p class="text baltxt">Total
                                                 Withdrawals</p>
                                             <p class="price myv">$0.00
-                                                USD</p>
+                                                </p>
                                         </li>
                                     </ul>
                                 </div>
@@ -56,19 +56,19 @@
                                             <p class="text baltxt">Active
                                                 Plans</p>
                                             <p class="price myv">$0.00
-                                                USD</p>
+                                                </p>
                                         </li>
                                         <li>
                                             <p class="text baltxt">Total
                                                 Earnings</p>
                                             <p class="price myv">$0.00
-                                                USD</p>
+                                                </p>
                                         </li>
                                         <li>
                                             <p class="text baltxt">Pending
                                                 WD</p>
                                             <p class="price myv">$0.00
-                                                USD</p>
+                                                </p>
                                         </li>
                                     </ul>
                                 </div>

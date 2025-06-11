@@ -8,129 +8,48 @@
 
 
 
+                        <form method="post" action="" style="padding: 5px;">
+                               
+                            <label class="fz16 mb8 mt8">Choose Payment</label>
+                            <div class="row">
 
-                            <form method="post"><input type="hidden" name="form_id" value="17491234669416"><input
-                                    type="hidden" name="form_token" value="4da85ce2d75f35cfbe588e176a412340">
-                                <input type="hidden" name="a" value="withdraw">
-                                <input type="hidden" name="action" value="preview">
-                                <input type="hidden" name="say" value="">
+                              
 
-                                <table cellspacing="0" cellpadding="2" border="0" width="100%">
-                                    <tbody>
-                                        <tr>
-                                            <td>Account Balance:</td>
-                                            <td>$<b>0.00</b></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Pending Withdrawals: </td>
-                                            <td>$<b></b></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <div class="col-lg-4 col-6"><input type="radio" name="type" value="process_92"
+                                        id="process_92" class="btn-check" checked=""><label
+                                        class="btn btn-dark deposit-button mb-2" for="process_92"><img
+                                            src="{{asset('')}}upnl/images/92.gif" align="absmiddle" style="width: 32px;"> Tether
+                                        TRC20</label></div>
 
-                                <table cellspacing="0" cellpadding="2" border="0" width="100%">
-                                    <tbody>
-                                        <tr>
-                                            <th></th>
-                                            <th>Processing</th>
-                                            <th>Available</th>
-                                            <th>Pending</th>
-                                            <th>Account</th>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td><img src="{{asset('')}}upnl/images/51.gif" width="44" height="17" align="absmiddle">
-                                                ePayCore</td>
-                                            <td><b style="color:green">$0.00</b></td>
-                                            <td><b style="color:red">$0.00</b></td>
-                                            <td><a href="?a=edit_account"><i>not set</i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td><img src="{{asset('')}}upnl/images/48.gif" width="44" height="17" align="absmiddle">
-                                                Bitcoin</td>
-                                            <td><b style="color:green">$0.00</b></td>
-                                            <td><b style="color:red">$0.00</b></td>
-                                            <td><a href="?a=edit_account"><i>not set</i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td><img src="{{asset('')}}upnl/images/68.gif" width="44" height="17" align="absmiddle">
-                                                Litecoin</td>
-                                            <td><b style="color:green">$0.00</b></td>
-                                            <td><b style="color:red">$0.00</b></td>
-                                            <td><a href="?a=edit_account"><i>not set</i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td><img src="{{asset('')}}upnl/images/69.gif" width="44" height="17" align="absmiddle">
-                                                Ethereum</td>
-                                            <td><b style="color:green">$0.00</b></td>
-                                            <td><b style="color:red">$0.00</b></td>
-                                            <td><a href="?a=edit_account"><i>not set</i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td><img src="{{asset('')}}upnl/images/72.gif" width="44" height="17" align="absmiddle">
-                                                Ripple</td>
-                                            <td><b style="color:green">$0.00</b></td>
-                                            <td><b style="color:red">$0.00</b></td>
-                                            <td><a href="?a=edit_account"><i>not set</i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td><img src="{{asset('')}}upnl/images/79.gif" width="44" height="17" align="absmiddle">
-                                                Dogecoin</td>
-                                            <td><b style="color:green">$0.00</b></td>
-                                            <td><b style="color:red">$0.00</b></td>
-                                            <td><a href="?a=edit_account"><i>not set</i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td><img src="{{asset('')}}upnl/images/82.gif" width="44" height="17" align="absmiddle">
-                                                Tether ERC20</td>
-                                            <td><b style="color:green">$0.00</b></td>
-                                            <td><b style="color:red">$0.00</b></td>
-                                            <td><a href="?a=edit_account"><i>not set</i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td><img src="{{asset('')}}upnl/images/85.gif" width="44" height="17" align="absmiddle"> Tron
-                                            </td>
-                                            <td><b style="color:green">$0.00</b></td>
-                                            <td><b style="color:red">$0.00</b></td>
-                                            <td><a href="?a=edit_account"><i>not set</i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td><img src="{{asset('')}}upnl/images/92.gif" width="44" height="17" align="absmiddle">
-                                                Tether TRC20</td>
-                                            <td><b style="color:green">$0.00</b></td>
-                                            <td><b style="color:red">$0.00</b></td>
-                                            <td><a href="?a=edit_account"><i>not set</i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td><img src="{{asset('')}}upnl/images/94.gif" width="44" height="17" align="absmiddle"> BNB
-                                            </td>
-                                            <td><b style="color:green">$0.00</b></td>
-                                            <td><b style="color:red">$0.00</b></td>
-                                            <td><a href="?a=edit_account"><i>not set</i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td><img src="{{asset('')}}upnl/images/102.gif" width="44" height="17" align="absmiddle">
-                                                Tether BEP20</td>
-                                            <td><b style="color:green">$0.00</b></td>
-                                            <td><b style="color:red">$0.00</b></td>
-                                            <td><a href="?a=edit_account"><i>not set</i></a></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <div class="col-lg-4 col-6"><input type="radio" name="type" value="process_102"
+                                        id="process_102" class="btn-check" checked=""><label
+                                        class="btn btn-dark deposit-button mb-2" for="process_102"><img
+                                            src="{{asset('')}}upnl/images/102.gif" align="absmiddle" style="width: 32px;"> Tether
+                                        BEP20</label></div>
 
-                                <br><br>
-                                You have no funds to withdraw.
-                            </form>
+                            </div>
+                            <label class="fz16 mb8 mt8">Choose Payment With Account Balance</label>
+                            <div class="row">
+
+
+                            </div>
+                            <div class="form-inner">
+                                <fieldset class="mb22"><label class="fz16 mb8" for="add_Sum">Amount ($)</label>
+                                    <fieldset><input type="text" name="amount" value=""placeholder="enter amount" class="pl14" required="">
+                                    </fieldset>
+                                </fieldset>
+                                 <fieldset class="mb22"><label class="fz16 mb8" for="add_Sum">TRX Password</label>
+                                    <fieldset><input type="password" name="trxpass" value="" placeholder="enter trx password" class="pl14" required="">
+                                    </fieldset>
+                                </fieldset>
+                                <div class="topup__info">
+                                    <div class="deposit-error-message" style="color: #ff00009e;"></div>
+                                </div><br>
+                                <div class="wrap-btn d-flex justify-content-center"><button type="submit" value="Spend"
+                                        class="tf-button style2" style="margin-bottom: 30px;">MAKE A TRANSFER</button></div>
+                            </div>
+
+                        </form>
 
 
                         </div>

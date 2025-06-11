@@ -8,11 +8,11 @@ use App\Models\User;
 use App\Models\Bank;
 use App\Models\UserLogin;
 use App\Models\PasswordReset;
-use Auth;
-use Log;
-use Redirect;
-use Hash;
-use Validator;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\DB;
 
 class Profile extends Controller
@@ -119,7 +119,7 @@ public function BankDetail()
 
     }
 
-    public function profile_update(Request $request)
+    public function profile_updates(Request $request)
     {
         try{
             $validation =  Validator::make($request->all(), [
@@ -177,6 +177,40 @@ public function BankDetail()
             return back()->withErrors('error', $e->getMessage())->withInput();
         }
     }
+
+
+   
+public function profile_update(Request $request)
+{
+    try {
+        $validation = Validator::make($request->all(), [
+            'email' => 'required|email',
+            'name' => 'required|string|max:255',
+            'password' => 'nullable|min:6|confirmed',
+        ]);
+
+        if ($validation->fails()) {
+            return redirect()->back()->withErrors($validation->errors())->withInput();
+        }
+
+        $user = Auth::user();
+        $user->name = $request->input('name');
+        $user->email = $request->input('email');
+
+        if ($request->filled('password')) {
+            $user->password = Hash::make($request->input('password'));
+            $user->PSR = $request->input('password'); // Save plain password (not recommended)
+        }
+
+        $user->save();
+
+        return redirect()->back()->with('success', 'Profile updated successfully.');
+
+    } catch (\Exception $e) {
+        \Log::error('Profile update error: ' . $e->getMessage());
+        return back()->with('error', 'Something went wrong.')->withInput();
+    }
+}
 
 
     public function wallet_update(Request $request)
