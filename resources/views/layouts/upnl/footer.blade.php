@@ -29,7 +29,7 @@
 
         .myv {
             max-width: 180px !important;
-            background: url("assets/images/common/bg_text4e.png") !important;
+            background: url("../upnl/assets/images/common/bg_text4e.png") !important;
         }
 
         .lfirn {
