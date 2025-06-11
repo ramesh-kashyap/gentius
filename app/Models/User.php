@@ -91,6 +91,7 @@ class User extends Authenticatable
     {
         return $this->hasMany('App\Models\Income','user_id','id')->where('remarks','Leadership Income');
     } 
+    
         
     public function level_bonus()
     {
@@ -167,6 +168,11 @@ class User extends Authenticatable
     public function users_incomes()
     {
         return  Income::where('user_id',Auth::user()->id)->sum('comm');
+    } 
+    
+     public function direct_incomes()
+    {
+        return  Income::where('user_id',Auth::user()->id)->where('remarks','Direct Income')->sum('comm');
     } 
     
 

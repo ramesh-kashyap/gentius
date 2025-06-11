@@ -60,10 +60,10 @@
                                             {{ Request::routeIs('user.DepositHistory') ? 'selected' : '' }}>
                                             Deposit History
                                         </option>
-                                        <!-- <option value="{{ route('user.DepositHistory') }}"
-                                            {{ Request::routeIs('user.DepositHistory') ? 'selected' : '' }}>
+                                       <option value="{{ route('user.reward-bonus') }}"
+                                            {{ Request::routeIs('user.reward-bonus') ? 'selected' : '' }}>
                                             Direct Income History
-                                        </option> -->
+                                        </option> 
                                         <option value="{{ route('user.level-income') }}"
                                             {{ Request::routeIs('user.level-income') ? 'selected' : '' }}>
                                             Level Income History
