@@ -11,10 +11,8 @@
                         <form method="post" action="" style="padding: 5px;">
                                
                             <label class="fz16 mb8 mt8">Choose Payment</label>
+
                             <div class="row">
-
-                              
-
                                 <div class="col-lg-4 col-6"><input type="radio" name="type" value="process_92"
                                         id="process_92" class="btn-check" checked=""><label
                                         class="btn btn-dark deposit-button mb-2" for="process_92"><img
@@ -26,13 +24,8 @@
                                         class="btn btn-dark deposit-button mb-2" for="process_102"><img
                                             src="{{asset('')}}upnl/images/102.gif" align="absmiddle" style="width: 32px;"> Tether
                                         BEP20</label></div>
-
                             </div>
-                            <label class="fz16 mb8 mt8">Choose Payment With Account Balance</label>
-                            <div class="row">
 
-
-                            </div>
                             <div class="form-inner">
                                 <fieldset class="mb22"><label class="fz16 mb8" for="add_Sum">Amount ($)</label>
                                     <fieldset><input type="text" name="amount" value=""placeholder="enter amount" class="pl14" required="">
