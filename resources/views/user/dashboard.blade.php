@@ -32,7 +32,7 @@
                                         <li>
                                             <p class="text baltxt">Total
                                                 Withdrawals</p>
-                                            <p class="price myv">{{ currency() }}{{ number_format(Auth::user()->withdraw(), 2) }}
+                                            <p class="price myv">{{ currency() }}{{ number_format(Auth::user()->withdrawtotal(), 2) }}
                                                 </p>
                                         </li>
                                     </ul>
@@ -55,19 +55,19 @@
                                         <li>
                                             <p class="text baltxt">Active
                                                 Plans</p>
-                                            <p class="price myv">$0.00
+                                            <p class="price myv">{{ currency() }}{{ number_format(Auth::user()->principleBalance(), 2) }}
                                                 </p>
                                         </li>
                                         <li>
                                             <p class="text baltxt">Total
                                                 Earnings</p>
-                                            <p class="price myv">$0.00
+                                            <p class="price myv">{{ currency() }}{{ number_format(Auth::user()->users_incomes(), 2) }}
                                                 </p>
                                         </li>
                                         <li>
                                             <p class="text baltxt">Pending
                                                 WD</p>
-                                            <p class="price myv">$0.00
+                                            <p class="price myv">{{ currency() }}{{ number_format(Auth::user()->withdraw(), 2) }}
                                                 </p>
                                         </li>
                                     </ul>

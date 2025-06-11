@@ -40,7 +40,7 @@
                                         <li class="summarx2 d-flex justify-content-start">
                                             <p class="me-2 mb-0"><i style="color: #fff;" class="fas fa-coins"></i></p>
                                             <p class="me-3 mb-0">Referral Earnings</p>
-                                            <p class="mb-0 text-white">$0.00 USD</p>
+                                            <p class="mb-0 text-white">{{ currency() }}{{ number_format(Auth::user()->direct_incomes(), 2) }}</p>
                                         </li>
                                         <li class="summarx2 d-flex justify-content-start">
                                             <p class="me-2 mb-0"><i class="fa fa-user"></i></p>

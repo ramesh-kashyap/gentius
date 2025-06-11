@@ -171,12 +171,12 @@
                         <ul id="menu-primary-menu" class="menu d-xl-none d-lg-none d-md-none">
                             <li class="menu-item menu-item current-menu-item"><a href="?a=account">Dashboard</a></li>
                             <li class="menu-item"><a href="{{route('user.deposit')}}">Deposit</a></li>
-                            <li class="menu-item"><a href="{{route('user.DepositHistory')}}">My
-                                    Deposit</a></li>
+                            <!-- <li class="menu-item"><a href="{{route('user.DepositHistory')}}">My
+                                    Deposit</a></li> -->
                             <li class="menu-item"><a href="{{route('user.Withdraw')}}">Withdrawal</a></li>
                             <li class="menu-item"><a href="{{route('user.Withdraw-History')}}">History</a></li>
                             <li class="menu-item"><a href="{{route('user.referral')}}">Referrals</a></li>
-                            <li class="menu-item"><a href="{{route('user.news')}}">Banners</a></li>
+                            <!-- <li class="menu-item"><a href="{{route('user.news')}}">Banners</a></li> -->
                             <li class="menu-item"><a href="{{route('user.activities')}}">My
                                     Account</a></li>
                             <li class="menu-item"><a href="{{route('user.security')}}">2FA
@@ -256,7 +256,7 @@
                                             <h6><a href="{{route('user.deposit')}}">Deposit</a></h6>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 9"
+                                    <!-- <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 9"
                                         style="width: 152.833px; margin-right: 30px;">
                                         <div class="icon-box-style4">
                                             <a href="{{route('user.DepositHistory')}}">
@@ -274,7 +274,7 @@
                                             <h6><a href="{{route('user.DepositHistory')}}">My
                                                     Deposit</a></h6>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <div class="swiper-slide" role="group" aria-label="3 / 9"
                                         style="width: 152.833px; margin-right: 30px;">
                                         <div class="icon-box-style4">
@@ -355,7 +355,7 @@
                                             <h6><a href="{{route('user.referral')}}">Referrals</a></h6>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide" role="group" aria-label="6 / 9"
+                                    <!-- <div class="swiper-slide" role="group" aria-label="6 / 9"
                                         style="width: 152.833px; margin-right: 30px;">
                                         <div class="icon-box-style4">
                                             <a href="{{route('user.news')}}">
@@ -396,7 +396,7 @@
                                             </a>
                                             <h6><a href="{{route('user.news')}}">Banners</a></h6>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <div class="swiper-slide" role="group" aria-label="7 / 9"
                                         style="width: 152.833px; margin-right: 30px;">
                                         <div class="icon-box-style4">
