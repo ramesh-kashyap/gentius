@@ -95,14 +95,7 @@
                                       <td style="color: white;">Your E-mail Address :</td>
                                       <td><input type="email" name="email" value="{{ Auth::user()->email }}" class="pl14" size="30"></td>
                                   </tr>
-                                  <tr>
-                                      <td style="color: white;">New Password:</td>
-                                      <td><input type="password" name="password" class="pl14" size="30"></td>
-                                  </tr>
-                                  <tr>
-                                      <td style="color: white;">Retype Password:</td>
-                                      <td><input type="password" name="password_confirmation" class="pl14" size="30"></td>
-                                  </tr>
+
                                   <tr>
                                       <td>&nbsp;</td>
                                       <td><input type="submit" value="Update" class="tf-button style2"></td>

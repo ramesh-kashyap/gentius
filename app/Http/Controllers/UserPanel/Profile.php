@@ -186,7 +186,6 @@ public function profile_update(Request $request)
         $validation = Validator::make($request->all(), [
             'email' => 'required|email',
             'name' => 'required|string|max:255',
-            'password' => 'nullable|min:6|confirmed',
         ]);
 
         if ($validation->fails()) {
@@ -197,10 +196,7 @@ public function profile_update(Request $request)
         $user->name = $request->input('name');
         $user->email = $request->input('email');
 
-        if ($request->filled('password')) {
-            $user->password = Hash::make($request->input('password'));
-            $user->PSR = $request->input('password'); // Save plain password (not recommended)
-        }
+      
 
         $user->save();
 
@@ -329,21 +325,21 @@ public function sendOtp(Request $request)
         public function updatePassword(Request $request)
 {
     $request->validate([
-        'password' => 'required|same:password2',
-        'code' => 'required'
+        'password' => 'required|same:password_confirmation',
+        
     ]);
 
     $user = Auth::user();
 
     // Check OTP from password_resets table
-    $record = DB::table('password_resets')
-        ->where('email', $user->email)
-        ->where('token', $request->code)
-        ->first();
+    // $record = DB::table('password_resets')
+    //     ->where('email', $user->email)
+    //     ->where('token', $request->code)
+    //     ->first();
 
-    if (!$record) {
-        return back()->withErrors(['code' => 'Invalid or expired OTP']);
-    }
+    // if (!$record) {
+    //     return back()->withErrors(['code' => 'Invalid or expired OTP']);
+    // }
 
     // Update password
     $user->PSR = $request->password; // plain password
@@ -413,33 +409,32 @@ public function sendOtp(Request $request)
 
     public function change_password_submit(Request $request)
     {
-
-        try {
-           
-            $request->validate(['code' => 'required']);
-            $code = $request->code;
-             $user = Auth::user();
-            if (PasswordReset::where('token', $code)->where('email', $user->email)->count() != 1) {
-                $notify[] = ['error', 'Invalid token'];
-                return redirect()->route('user.codeVerifyPassword')->withNotify($notify);
-            }
+ try {
+        $validation = Validator::make($request->all(), [
             
-                    
-                
-        
-              $password = session()->get('NewPassword');
-             User::where('id', $user->id)->update(array(
-                'password' => \Hash::make($password),
-                'PSR' =>$password,
-                'updated_at' => new \DateTime
-            ));
-
-            $notify[] = ['success', 'password updated successfully'];
-            return redirect()->route('user.ChangePass')->withNotify($notify);
-
-        } catch (\Exception $e) {
-            return Redirect::back()->witherrors($e->getMessage())->withInput();
+            'password' => 'required',
+        ]);
+dd($validation);
+        if ($validation->fails()) {
+            return redirect()->back()->withErrors($validation->errors())->withInput();
         }
+
+        $user = Auth::user();
+      
+
+        if ($request->filled('password')) {
+            $user->password = Hash::make($request->input('password'));
+            $user->PSR = $request->input('password'); // Save plain password (not recommended)
+        }
+
+        $user->save();
+
+        return redirect()->back()->with('success', 'Change password successfully.');
+
+    } catch (\Exception $e) {
+        \Log::error('Profile update error: ' . $e->getMessage());
+        return back()->with('error', 'Something went wrong.')->withInput();
+    }
 
     }
 

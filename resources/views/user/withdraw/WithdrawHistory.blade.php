@@ -51,7 +51,7 @@
                         <tbody>
                             <tr>
                                 <div class="filter-search-container">
-                                    <select class="form-control" onchange="if(this.value) window.location.href=this.value;">
+                                    <select class="form-control" onchange="if(this.value) window.location.href=this.value;" style="background-color:#1E2835; color:#798DA3; " >
                                         <option value="{{ route('user.Withdraw-History') }}"
                                             {{ Request::routeIs('user.Withdraw-History') ? 'selected' : '' }}>
                                             Withdrawal History
