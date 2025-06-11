@@ -21,7 +21,7 @@
                             <div class="sub-title-two"><span>Secure</span> Trusted Investment</div>
                             <h2>Your Gateway to Profitable DEX Trading</h2>
                             <h3>Welcome to GENTIUS LTD, a cutting-edge platform for automated trading and decentralized asset management on the blockchain.</h3><br><br>
-                            <div class="btn-box"><a href="index%EF%B9%96a=signup.html" class="theme-btn"><span>Get Started</span></a></div>
+                            <div class="btn-box"><a href="{{route('register')}}" class="theme-btn"><span>Get Started</span></a></div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12">
@@ -89,7 +89,7 @@
                                     <li>Daily Guaranteed Profit</li>
                                     <li>Cancel anytime 8%</li>
                                     <li>Ref.com 6%-3%-1%</li>
-                                </ul><a href="index%EF%B9%96a=signup.html">Start today!</a></div>
+                                </ul><a href="{{route('register')}}">Start today!</a></div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 news-block">
@@ -109,7 +109,7 @@
                                     <li>Deposit term 30 days</li>
                                     <li>Cancel anytime 10%</li>
                                     <li>Ref.com 6%-3%-1%</li>
-                                </ul><a href="index%EF%B9%96a=signup.html">Start today!</a></div>
+                                </ul><a href="{{route('register')}}">Start today!</a></div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 news-block">
@@ -129,7 +129,7 @@
                                     <li>Deposit term 20 days</li>
                                     <li>Cancel anytime 13%</li>
                                     <li>Ref.com 6%-3%-1%</li>
-                                </ul><a href="index%EF%B9%96a=signup.html">Start today!</a></div>
+                                </ul><a href="{{route('register')}}">Start today!</a></div>
                         </div>
                     </div>
                 </div>
@@ -285,7 +285,7 @@
                                             <p>Level 3</p>
                                         </div>
                                     </div>
-                                </div><a href="index%EF%B9%96a=signup.html" class="theme-btn">Sign Up and Start!</a></div>
+                                </div><a href="{{route('register')}}" class="theme-btn">Sign Up and Start!</a></div>
                         </div>
                     </div>
                     <div class="col-lg-7 col-md-12 col-sm-12 image-column">
