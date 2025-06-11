@@ -1,221 +1,150 @@
+    <style>
+        .th {
+            color: #ffff
+        }
+    </style>
 
-            <section class="tf-section FAQs">
-                <div class="container">
-                    <div class="row mt-xl-0 mt-lg-0 mt-md-0 mt-4">
-                        <div class="project-info-form style">
-                            <h6 class="title mb-3">My Deposit</h6>
 
-                            <b>Total: $0.00</b><br><br>
-                            <div class="table-responsive">
-                                <table cellspacing="1" cellpadding="2"
-                                    border="0" width="100%"
-                                    class="line"><tbody><tr><td class="item">
-                                                <table cellspacing="1"
-                                                    cellpadding="2" border="0"
-                                                    width="100%"><tbody><tr>
-                                                            <td colspan="3"
-                                                                align="center"><b>1.1%-3.3%
-                                                                    daily for 15
-                                                                    days</b></td>
-                                                        </tr><tr>
-                                                            <th
-                                                                class="inheader">Plan
-                                                            </th><th
-                                                                class="inheader"
-                                                                width="200">Deposit
-                                                                Amount
-                                                            </th><th
-                                                                class="inheader"
-                                                                width="100"
-                                                                nowrap><nobr>Daily
-                                                                    Profit
-                                                                    (%)</nobr>
-                                                            </th></tr>
-                                                        <tr>
-                                                            <td
-                                                                class="item">Plan
-                                                                1</td>
-                                                            <td class="item"
-                                                                align="right">$20.00
-                                                                - $250.00</td>
-                                                            <td class="item"
-                                                                align="right">1.10</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td
-                                                                class="item">Plan
-                                                                2</td>
-                                                            <td class="item"
-                                                                align="right">$251.00
-                                                                - $2500.00</td>
-                                                            <td class="item"
-                                                                align="right">2.20</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td
-                                                                class="item">Plan
-                                                                3</td>
-                                                            <td class="item"
-                                                                align="right">$2501.00
-                                                                - $25000.00</td>
-                                                            <td class="item"
-                                                                align="right">3.30</td>
-                                                        </tr>
-                                                    </tbody></table>
-                                                <br>
-                                                <table cellspacing="1"
-                                                    cellpadding="2" border="0"
-                                                    width="100%"><tbody><tr>
-                                                            <td
-                                                                colspan="4"><b>No
-                                                                    deposits for
-                                                                    this
-                                                                    plan</b></td>
-                                                        </tr>
-                                                    </tbody></table>
-                                                <br>
-                                            </td></tr></tbody></table>
-                                <br>
-                                <table cellspacing="1" cellpadding="2"
-                                    border="0" width="100%"
-                                    class="line"><tbody><tr><td class="item">
-                                                <table cellspacing="1"
-                                                    cellpadding="2" border="0"
-                                                    width="100%"><tbody><tr>
-                                                            <td colspan="3"
-                                                                align="center"><b>4.5%-6.5%
-                                                                    daily for 30
-                                                                    days</b></td>
-                                                        </tr><tr>
-                                                            <th
-                                                                class="inheader">Plan
-                                                            </th><th
-                                                                class="inheader"
-                                                                width="200">Deposit
-                                                                Amount
-                                                            </th><th
-                                                                class="inheader"
-                                                                width="100"
-                                                                nowrap><nobr>Daily
-                                                                    Profit
-                                                                    (%)</nobr>
-                                                            </th></tr>
-                                                        <tr>
-                                                            <td
-                                                                class="item">Plan
-                                                                1</td>
-                                                            <td class="item"
-                                                                align="right">$50.00
-                                                                - $250.00</td>
-                                                            <td class="item"
-                                                                align="right">4.50</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td
-                                                                class="item">Plan
-                                                                2</td>
-                                                            <td class="item"
-                                                                align="right">$251.00
-                                                                - $2500.00</td>
-                                                            <td class="item"
-                                                                align="right">5.50</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td
-                                                                class="item">Plan
-                                                                3</td>
-                                                            <td class="item"
-                                                                align="right">$2501.00
-                                                                - $25000.00</td>
-                                                            <td class="item"
-                                                                align="right">6.50</td>
-                                                        </tr>
-                                                    </tbody></table>
-                                                <br>
-                                                <table cellspacing="1"
-                                                    cellpadding="2" border="0"
-                                                    width="100%"><tbody><tr>
-                                                            <td
-                                                                colspan="4"><b>No
-                                                                    deposits for
-                                                                    this
-                                                                    plan</b></td>
-                                                        </tr>
-                                                    </tbody></table>
-                                                <br>
-                                            </td></tr></tbody></table>
-                                <br>
-                                <table cellspacing="1" cellpadding="2"
-                                    border="0" width="100%"
-                                    class="line"><tbody><tr><td class="item">
-                                                <table cellspacing="1"
-                                                    cellpadding="2" border="0"
-                                                    width="100%"><tbody><tr>
-                                                            <td colspan="3"
-                                                                align="center"><b>8.2%-10%
-                                                                    daily for 20
-                                                                    days</b></td>
-                                                        </tr><tr>
-                                                            <th
-                                                                class="inheader">Plan
-                                                            </th><th
-                                                                class="inheader"
-                                                                width="200">Deposit
-                                                                Amount
-                                                            </th><th
-                                                                class="inheader"
-                                                                width="100"
-                                                                nowrap><nobr>Daily
-                                                                    Profit
-                                                                    (%)</nobr>
-                                                            </th></tr>
-                                                        <tr>
-                                                            <td
-                                                                class="item">Plan
-                                                                1</td>
-                                                            <td class="item"
-                                                                align="right">$250.00
-                                                                - $2500.00</td>
-                                                            <td class="item"
-                                                                align="right">8.20</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td
-                                                                class="item">Plan
-                                                                2</td>
-                                                            <td class="item"
-                                                                align="right">$2501.00
-                                                                - $10000.00</td>
-                                                            <td class="item"
-                                                                align="right">9.20</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td
-                                                                class="item">Plan
-                                                                3</td>
-                                                            <td class="item"
-                                                                align="right">$10001.00
-                                                                - $25000.00</td>
-                                                            <td class="item"
-                                                                align="right">10.00</td>
-                                                        </tr>
-                                                    </tbody></table>
-                                                <br>
-                                                <table cellspacing="1"
-                                                    cellpadding="2" border="0"
-                                                    width="100%"><tbody><tr>
-                                                            <td
-                                                                colspan="4"><b>No
-                                                                    deposits for
-                                                                    this
-                                                                    plan</b></td>
-                                                        </tr>
-                                                    </tbody></table>
-                                                <br>
-                                            </td></tr></tbody></table>
-                                <br>
-                            </div></div>
+    <style>
+        .filter-search-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .filter-search-container select,
+        .filter-search-container input[type="text"] {
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            flex: 1 1 44px;
+        }
+
+        .filter-search-container button {
+            white-space: nowrap;
+        }
+
+        @media (max-width: 600px) {
+            .filter-search-container {
+                flex-direction: column;
+                align-items: stretch;
+            }
+        }
+    </style>
+    <section class="tf-section FAQs">
+        <div class="container">
+            <div class="row mt-xl-0 mt-lg-0 mt-md-0 mt-4">
+                <div class="project-info-form style">
+                    <h6 class="title mb-3">Deposit History</h6>
+
+
+                    <script language="javascript">
+                        function go(p) {
+                            document.opts.page.value = p;
+                            document.opts.submit();
+                        }
+                    </script>
+
+                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <div class="filter-search-container">
+                                    <select class="form-control" onchange="if(this.value) window.location.href=this.value;">
+                                        <option value="{{ route('user.Withdraw-History') }}"
+                                            {{ Request::routeIs('user.Withdraw-History') ? 'selected' : '' }}>
+                                            Withdrawal History
+                                        </option>
+                                        <option value="{{ route('user.DepositHistory') }}"
+                                            {{ Request::routeIs('user.DepositHistory') ? 'selected' : '' }}>
+                                            Deposit History
+                                        </option>
+                                      <option value="{{ route('user.reward-bonus') }}"
+                                            {{ Request::routeIs('user.reward-bonus') ? 'selected' : '' }}>
+                                            Direct Income History
+                                        </option> 
+                                        <option value="{{ route('user.level-income') }}"
+                                            {{ Request::routeIs('user.level-income') ? 'selected' : '' }}>
+                                            Level Income History
+                                        </option> 
+                                        <option value="{{ route('user.roi-bonus') }}"
+                                            {{ Request::routeIs('user.roi-bonus') ? 'selected' : '' }}>
+                                            Roi Income History
+                                        </option>
+
+
+
+                                    </select>
+
+
+                                    <form method="GET" action="{{ route('user.DepositHistory') }}">
+                                        @csrf
+                                        <div style="display: flex; gap: 10px;">
+                                            <input type="text" name="search" placeholder="Search by Payment Mode or Status" value="{{ request('search') }}">
+                                            <button type="submit" class="tf-button style2">Search</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <br><br>
+
+
+                    <div class="table-responsive">
+                        <table cellspacing="1" cellpadding="2" border="0" width="100%"
+                            class="table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th class="th">S.NO</th>
+
+                                    <th class="th">Payment Mode</th>
+
+                                    <th class="th">Amount</th>
+                                    <th class="th">Status</th>
+
+                                    <th class="th">Created At</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @forelse($deposit_list as $withdraw)
+
+                                <tr>
+                                    <td class="td">{{ $loop->iteration }}</td> <!-- S.NO -->
+
+                                    <td class="td"> {{ $withdraw->payment_mode }}
+                                    </td>
+                                    <td class="td"> ${{ number_format($withdraw->amount, 2) }}
+                                    </td>
+                                    <td class="td"> {{ $withdraw->status }}
+                                    </td>
+                                    <td class="td"> {{ \Carbon\Carbon::parse($withdraw->created_at)->format('M-d-Y') }}
+                                    </td>
+                                </tr>
+                                @empty
+
+                                <tr>
+                                    <td style="color:#fff" colspan="3" align="center">No transactions found</td>
+                                </tr>
+                                @endforelse
+                                <!-- <tr>
+                                        <td colspan="3">&nbsp;</td>
+
+
+
+                                    </tr> -->
+                            </tbody>
+                        </table>
+                        <div class="d-flex justify-content-center mt-4">
+                            {{ $deposit_list->links('pagination::bootstrap-4') }}
+                        </div>
+
+
                     </div>
                 </div>
-            </section>
-          
+            </div>
+        </div>
+    </section>
