@@ -134,7 +134,6 @@ public function WithdrawRequest(Request $request)
             'PSys' => 'required',
             'trx_password' => 'required'
         ]);
-
         if ($validation->fails()) {
             Log::info('Validation failed', ['error' => $validation->getMessageBag()->first()]);
             return Redirect::back()->withErrors($validation->getMessageBag()->first())->withInput();
@@ -144,16 +143,21 @@ public function WithdrawRequest(Request $request)
         $password = $request->trx_password;
 
         $balance = $user->available_balance();
+
         $account = '';
         $paymentMode = ''; // Define the variable before usage
 
         // Set payment mode and account address based on PSys input
-        if ($request->PSys == "USDT(BEP20)") {
-            $account = $user->usdtBep20;
-            $paymentMode = "USDT_BSC";
-        }  else {
-            return Redirect::back()->withErrors(['Invalid Payment System selected.']);
-        }
+      if ($request->PSys == "USDT(BEP20)") {
+    $account = $user->usdtBep20;
+    $paymentMode = "USDT_BSC";
+} elseif ($request->PSys == "USDT(TRC20)") {
+    $account = $user->usdtTrc20;
+    $paymentMode = "USDT_TRC";
+} else {
+    return Redirect::back()->withErrors(['Invalid Payment System selected.']);
+}
+
 
         if (Hash::check($password, $user->tpassword)) {
       if ($balance >= $request->amount) {
@@ -203,7 +207,6 @@ public function WithdrawRequest(Request $request)
         return redirect()->route('user.Withdraw')->withErrors(['error' => $e->getMessage()])->withInput();
     }
 }
-
 
 
     public function WithdrawRequestPrinciple(Request $request)
@@ -311,8 +314,6 @@ public function WithdrawRequest(Request $request)
      die("hi");
      return  redirect()->route('user.WithdrawRequest')->withErrors('error', $e->getMessage())->withInput();
        }
-
-
 
 
     }
