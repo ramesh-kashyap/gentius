@@ -1,3 +1,39 @@
+    <style>
+            .th{
+                color:#ffff
+            }
+            
+            </style>
+
+
+<style>
+    .filter-search-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .filter-search-container select,
+    .filter-search-container input[type="text"] {
+        padding: 5px 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        flex: 1 1 44px;
+    }
+
+    .filter-search-container button {
+        white-space: nowrap;
+    }
+
+    @media (max-width: 600px) {
+        .filter-search-container {
+            flex-direction: column;
+            align-items: stretch;
+        }
+    }
+</style>
   <section class="tf-section FAQs">
             <div class="container">
                 <div class="row mt-xl-0 mt-lg-0 mt-md-0 mt-4">
@@ -16,233 +52,42 @@
                         <table cellspacing="0" cellpadding="0" border="0" width="100%">
                             <tbody>
                                 <tr>
-                                    <form method="post" name="opts"></form><input type="hidden" name="form_id"
-                                        value="17491235057427"><input type="hidden" name="form_token"
-                                        value="a783757d53ed6c187ea3bec7aea19e08">
-                                    <input type="hidden" name="a" value="history">
-                                    <input type="hidden" name="page" value="1">
-                                    <td>
-                                        <select name="type" class="pl14" onchange="document.opts.submit();">
-                                            <option value="">All transactions</option>
-                                            <option value="deposit">Deposit</option>
-                                            <option value="withdrawal">Withdrawal</option>
-                                            <option value="earning">Earning</option>
-                                            <option value="commissions">Referral commission</option>
-                                        </select>
-                                        <br><img src="images/q.gif" width="1" height="4"><br>
-                                        <select name="ec" class="pl14">
-                                            <option value="-1">All eCurrencies</option>
-                                            <option value="51">ePayCore</option>
-                                            <option value="48">Bitcoin</option>
-                                            <option value="68">Litecoin</option>
-                                            <option value="69">Ethereum</option>
-                                            <option value="72">Ripple</option>
-                                            <option value="79">Dogecoin</option>
-                                            <option value="82">Tether ERC20</option>
-                                            <option value="85">Tron</option>
-                                            <option value="92">Tether TRC20</option>
-                                            <option value="94">BNB</option>
-                                            <option value="102">Tether BEP20</option>
-                                        </select>
-                                    </td>
-                                    <td align="right">
-                                        From: <select name="month_from" class="pl14">
-                                            <option value="1">Jan
-                                            </option>
-                                            <option value="2">Feb
-                                            </option>
-                                            <option value="3">Mar
-                                            </option>
-                                            <option value="4">Apr
-                                            </option>
-                                            <option value="5" selected="">May
-                                            </option>
-                                            <option value="6">Jun
-                                            </option>
-                                            <option value="7">Jul
-                                            </option>
-                                            <option value="8">Aug
-                                            </option>
-                                            <option value="9">Sep
-                                            </option>
-                                            <option value="10">Oct
-                                            </option>
-                                            <option value="11">Nov
-                                            </option>
-                                            <option value="12">Dec
-                                            </option>
-                                        </select> &nbsp;
-                                        <select name="day_from" class="pl14">
-                                            <option value="1">1
-                                            </option>
-                                            <option value="2">2
-                                            </option>
-                                            <option value="3">3
-                                            </option>
-                                            <option value="4">4
-                                            </option>
-                                            <option value="5">5
-                                            </option>
-                                            <option value="6">6
-                                            </option>
-                                            <option value="7">7
-                                            </option>
-                                            <option value="8">8
-                                            </option>
-                                            <option value="9">9
-                                            </option>
-                                            <option value="10">10
-                                            </option>
-                                            <option value="11">11
-                                            </option>
-                                            <option value="12">12
-                                            </option>
-                                            <option value="13">13
-                                            </option>
-                                            <option value="14">14
-                                            </option>
-                                            <option value="15">15
-                                            </option>
-                                            <option value="16">16
-                                            </option>
-                                            <option value="17">17
-                                            </option>
-                                            <option value="18">18
-                                            </option>
-                                            <option value="19">19
-                                            </option>
-                                            <option value="20">20
-                                            </option>
-                                            <option value="21">21
-                                            </option>
-                                            <option value="22">22
-                                            </option>
-                                            <option value="23">23
-                                            </option>
-                                            <option value="24">24
-                                            </option>
-                                            <option value="25">25
-                                            </option>
-                                            <option value="26">26
-                                            </option>
-                                            <option value="27">27
-                                            </option>
-                                            <option value="28">28
-                                            </option>
-                                            <option value="29">29
-                                            </option>
-                                            <option value="30">30
-                                            </option>
-                                            <option value="31" selected="">31
-                                            </option>
-                                        </select> &nbsp;
+                                    <div class="filter-search-container">
+        <select class="form-control" onchange="if(this.value) window.location.href=this.value;">
+        <option value="{{ route('user.Withdraw-History') }}"
+            {{ Request::routeIs('user.Withdraw-History') ? 'selected' : '' }}>
+            Withdrawal History
+        </option>
+        <option value="{{ route('user.DepositHistory') }}"
+            {{ Request::routeIs('user.DepositHistory') ? 'selected' : '' }}>
+            Deposit History
+        </option>
+        <option value="{{ route('user.DepositHistory') }}"
+            {{ Request::routeIs('user.DepositHistory') ? 'selected' : '' }}>
+            Direct Income History
+        </option>
+        <option value="{{ route('user.DepositHistory') }}"
+            {{ Request::routeIs('user.DepositHistory') ? 'selected' : '' }}>
+            Level Income History
+        </option>
+ <option value="{{ route('user.DepositHistory') }}"
+            {{ Request::routeIs('user.DepositHistory') ? 'selected' : '' }}>
+            Roi Income History
+        </option>
+        
 
-                                        <select name="year_from" class="pl14">
-                                            <option value="2025" selected="">2025
-                                            </option>
-                                        </select><br><img src="images/q.gif" width="1" height="4"><br>
+       
+    </select>
 
-                                        To: <select name="month_to" class="pl14">
-                                            <option value="1">Jan
-                                            </option>
-                                            <option value="2">Feb
-                                            </option>
-                                            <option value="3">Mar
-                                            </option>
-                                            <option value="4">Apr
-                                            </option>
-                                            <option value="5">May
-                                            </option>
-                                            <option value="6" selected="">Jun
-                                            </option>
-                                            <option value="7">Jul
-                                            </option>
-                                            <option value="8">Aug
-                                            </option>
-                                            <option value="9">Sep
-                                            </option>
-                                            <option value="10">Oct
-                                            </option>
-                                            <option value="11">Nov
-                                            </option>
-                                            <option value="12">Dec
-                                            </option>
-                                        </select> &nbsp;
-                                        <select name="day_to" class="pl14">
-                                            <option value="1">1
-                                            </option>
-                                            <option value="2">2
-                                            </option>
-                                            <option value="3">3
-                                            </option>
-                                            <option value="4">4
-                                            </option>
-                                            <option value="5" selected="">5
-                                            </option>
-                                            
-                                            <option value="6">6
-                                            </option>
-                                            <option value="7">7
-                                            </option>
-                                            <option value="8">8
-                                            </option>
-                                            <option value="9">9
-                                            </option>
-                                            <option value="10">10
-                                            </option>
-                                            <option value="11">11
-                                            </option>
-                                            <option value="12">12
-                                            </option>
-                                            <option value="13">13
-                                            </option>
-                                            <option value="14">14
-                                            </option>
-                                            <option value="15">15
-                                            </option>
-                                            <option value="16">16
-                                            </option>
-                                            <option value="17">17
-                                            </option>
-                                            <option value="18">18
-                                            </option>
-                                            <option value="19">19
-                                            </option>
-                                            <option value="20">20
-                                            </option>
-                                            <option value="21">21
-                                            </option>
-                                            <option value="22">22
-                                            </option>
-                                            <option value="23">23
-                                            </option>
-                                            <option value="24">24
-                                            </option>
-                                            <option value="25">25
-                                            </option>
-                                            <option value="26">26
-                                            </option>
-                                            <option value="27">27
-                                            </option>
-                                            <option value="28">28
-                                            </option>
-                                            <option value="29">29
-                                            </option>
-                                            <option value="30">30
-                                            </option>
-                                            <option value="31">31
-                                            </option>
-                                        </select> &nbsp;
 
-                                        <select name="year_to" class="pl14">
-                                            <option value="2025" selected="">2025
-                                            </option>
-                                        </select>
-
-                                    </td>
-                                    <td>
-                                        &nbsp; <input type="submit" value="Go" class="tf-button style2">
-                                    </td>
+    <form method="GET" action="{{ route('user.Withdraw-History') }}">
+        @csrf
+        <div style="display: flex; gap: 10px;">
+            <input type="text" name="search" placeholder="Search by Payment Mode or Status" value="{{ request('search') }}">
+            <button type="submit" class="tf-button style2">Search</button>
+        </div>
+    </form>
+</div>
                                 </tr>
                             </tbody>
                         </table>
@@ -253,34 +98,56 @@
                         <div class="table-responsive">
                             <table cellspacing="1" cellpadding="2" border="0" width="100%"
                                 class="table table-striped table-bordered">
+                                	<thead>
+											<tr>
+                                                <th class="th">S.NO</th>
+
+											<th class="th">Payment Mode</th>
+
+                                             <th class="th">Amount</th>
+                                              <th class="th">Status</th>
+
+                                              <th class="th">Created At</th>
+                           
+											</tr>
+										</thead>
                                 <tbody>
+                                                               @forelse($withdraw_report as $withdraw)
+
                                     <tr>
-                                        <th class="inheader"><b>Type</b>
-                                        </th>
-                                        <th class="inheader" width="200"><b>Amount</b>
-                                        </th>
-                                        <th class="inheader" width="170"><b>Date</b>
-                                        </th>
+                                                    <td class="td">{{ $loop->iteration }}</td> <!-- S.NO -->
+
+                                        <td class="td"> {{ $withdraw->payment_mode }}
+                                        </td>
+                                        <td class="td"> ${{ number_format($withdraw->amount, 2) }}
+                                        </td>
+                                        <td class="td" > {{ $withdraw->status }}
+                                        </td>
+                                        <td class="td" > {{ \Carbon\Carbon::parse($withdraw->created_at)->format('M-d-Y') }}
+                                        </td>
                                     </tr>
+                                            @empty
+
                                     <tr>
-                                        <td colspan="3" align="center">No transactions found</td>
+                                        <td style="color:#fff" colspan="3" align="center">No transactions found</td>
                                     </tr>
-                                    <tr>
+                                     @endforelse
+                                    <!-- <tr>
                                         <td colspan="3">&nbsp;</td>
 
 
 
-                                    </tr>
+                                    </tr> -->
                                 </tbody>
                             </table>
+       <div class="d-flex justify-content-center mt-4">
+        {{ $withdraw_report->links('pagination::bootstrap-4') }}
+    </div>
 
-                            <ul class="pagination">
-                                <li class="page-item"><a class="prev page-link disabled">&lt;&lt;</a></li>
-                                <li class="page-item active"><a class="page-link">1</a></li>
-                                <li class="page-item"><a class="next page-link disabled">&gt;&gt;</a></li>
-                            </ul>
+                         
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+      
