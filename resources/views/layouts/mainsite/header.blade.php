@@ -44,7 +44,7 @@
             <div class="outer-container">
                 <div class="outer-box">
                     <div class="logo-box">
-                        <figure class="logo"><a href="index%EF%B9%96a=home.html"><img src="assets/images/logo.png" alt="" style="max-width: 350px;"></a></figure>
+                        <figure class="logo"><a href="/"><img src="assets/images/logo.png" alt="" style="max-width: 350px;"></a></figure>
                     </div>
                     <div class="menu-area">
                         <div class="mobile-nav-toggler"><i class="icon-bar"></i><i class="icon-bar"></i><i class="icon-bar"></i></div>

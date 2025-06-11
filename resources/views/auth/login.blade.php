@@ -31,13 +31,13 @@
 
                             <div class="option-box">
                                 <div class="check-box"><input name="Remember" id="checkbox" value="1" type="checkbox" class="check" /><label for="checkbox">Remember Me</label></div>
-                                <div class="reset-btn"><a href="#">Forgot Password</a></div>
+                                <div class="reset-btn"><a href="{{route('forgot-password')}}">Forgot Password</a></div>
                             </div>
                             <div class="btn-box"><button type="submit"  class="theme-btn">Sign In</button></div>
                         <!-- </table> -->
                     </form>
                 </div>
-                <div class="text">Can’t login? <a href="">Sign up for new user?</a></div>
+                <div class="text">Can’t login? <a href="{{route('register')}}">Sign up for new user?</a></div>
             </div>
         </section>
 @include('layouts.mainsite.footer')

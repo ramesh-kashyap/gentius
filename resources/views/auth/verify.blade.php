@@ -1,180 +1,85 @@
-@include('layouts.mainsite.header')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Successful</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-<div class="hero">
-    <div class="container text-center">
-      
-        <!--<p class="lead mt-4 mb-5" style="color: rgba(255, 255, 255, 0.9); max-width: 600px; margin: 0 auto;">-->
-        <!--    Sign in to access your secure investment dashboard-->
-        <!--</p>-->
-           <h1>Registration <span class="gradient-text">Successfull</span></h1>
-        
+        .success-card {
+            background-color: #ffffff15;
+            padding: 40px 30px;
+            border-radius: 20px;
+            text-align: center;
+            max-width: 450px;
+            width: 100%;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .success-card h1 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #ffc107;
+        }
+
+        .success-card h4 {
+            font-size: 1rem;
+            color: #ddd;
+            margin: 10px 0;
+        }
+
+        .success-card .highlight {
+            color: #00e6e6;
+            font-weight: bold;
+        }
+
+        .btn {
+            margin-top: 30px;
+            display: inline-block;
+            background: #deff10;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background:rgb(90, 100, 99);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="success-card">
+        @if(session()->has('messages'))
+            @php
+                $user = session('messages');
+            @endphp
+
+            <h1>🎉 Registration Successful!</h1>
+            <h4>Welcome, <span class="highlight">{{ $user->name }}</span></h4>
+            <h4>Your Username: <span class="highlight">{{ $user->username }}</span></h4>
+            <h4>Your Password: <span class="highlight">{{ $user->PSR }}</span></h4> and your transaction password : {{ $user->TPSR }}
+            <h4>Please check your email for full details.</h4>
+
+            <a href="{{ route('login') }}" class="btn">Sign In</a>
+        @else
+            <h1>⚠️ No data found</h1>
+        @endif
     </div>
-</div>
-<style>
-    .h4, h4 {
-    font-size: 16px;
-}
-@media only screen and (max-width: 600px) {
-    .hero h1 {
-        padding-top: 40px;
-        text-align: center;
-        font-size: 2rem;
-        font-weight: 700;
-        perspective: 1000px;
-    }
-}
-@media only screen and (min-width: 1400px) {
-    .hero {
-        position: relative;
-        padding-top: 36px;
-        z-index: 1;
-        height: 40vh;
-    }
-}
-</style>
-<section class="unique-section">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-6 col-lg-5">
-                <div class="card bento-card">
-                    <div class="card-body p-4">
-                  
-                        <script language=javascript>
-                            function checkform() {
-                                if (document.mainform.username.value == '') {
-                                    alert("Please type your username!");
-                                    document.mainform.username.focus();
-                                    return false;
-                                }
-                                if (document.mainform.password.value == '') {
-                                    alert("Please type your password!");
-                                    document.mainform.password.focus();
-                                    return false;
-                                }
-                                return true;
-                            }
-
-                        </script>
-
-                    
-
-                        <form action="{{ route('login') }}" method="POST" name=mainform 
-                            class="login-form">
-                            
-                            
-                                 @if(session()->has('messages'))
-                                <?php
-                                $user_details=session()->get('messages')
-                            ?>
-
-
-                              
-                              
-                                <h4 style="color: ##000">Congratulations! Your Account has been successfully
-                                    Created.</h4>
-                                <br>
-
-                                <h4 style="color: ##000">Dear <span class="main-color"
-                                        style="color: #ffc70d;font-weight: 700;">{{$user_details->name }}</span>,
-                                </h4>
-                                <br>
-                                <h4 style="color: ##000"> You have been successfully registered. <br> Your
-                                    user id is <span class="main-color"
-                                        style="    color: #1885c1;font-weight: 700;">{{$user_details->username  }}</span>
-                                    Password is: <span class="main-color"
-                                        style="color: #1885c1;font-weight: 700;">
-                                        {{$user_details->PSR  }}</span> 
-                                    please check your mail for more details.</h4>
-
-                                @endif
-
-                            <div class="d-grid mt-4">
-                                <a href="{{route('login')}}" class="button" style="    text-align: center;">Sign In</a>
-                            </div>
-
-                          
-                        </form>
-                    </div>
-                </div>
-
-                <div class="text-center mt-4">
-                    <p style="color: rgba(255, 255, 255, 0.7);">
-                        Don't have an account?
-                        <a href="register" class="themed-link">Create one now</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-@include('layouts.mainsite.footer')
-
-@include('partials.notify')
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
-</script>
-<script src="{{asset('')}}assets/js/gsap.min.js"></script>
-<script src="{{asset('')}}assets/js/ScrollTrigger.min.js"></script>
-<script src="{{asset('')}}assets/js/SplitText.min.js"></script>
-<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-<script src="{{asset('')}}assets/js/app.js"></script>
-
-
-<script>
-    window.addEventListener('load', function () {
-        // All resources (images, scripts, stylesheets, etc.) are loaded
-        const preloaderContainer = document.querySelector('.preloader-container');
-        const content = document.querySelector('.content');
-
-        if (preloaderContainer) {
-            // Add the 'hidden' class to trigger the fade-out animation
-            preloaderContainer.classList.add('hidden');
-
-            // Optional: If you want to completely remove the preloader from the DOM
-            // after the transition, you can listen for the 'transitionend' event.
-            preloaderContainer.addEventListener('transitionend', function () {
-                if (preloaderContainer.style.opacity === '0' || getComputedStyle(preloaderContainer)
-                    .opacity === '0') {
-                    preloaderContainer.style.display = 'none'; // Or preloaderContainer.remove();
-                }
-            }, {
-                once: true
-            }); // {once: true} ensures the event listener is removed after it fires
-        }
-
-        if (content) {
-            content.style.display = 'block'; // Or any other display type you need, e.g., 'flex'
-            // If you used opacity for content:
-            // content.style.opacity = '1';
-            // content.style.visibility = 'visible';
-        }
-    });
-
-    // Fallback in case 'load' event doesn't fire or takes too long (e.g., for broken images)
-    // You might want to adjust the timeout duration
-    setTimeout(function () {
-        const preloaderContainer = document.querySelector('.preloader-container');
-        const content = document.querySelector('.content');
-
-        if (preloaderContainer && !preloaderContainer.classList.contains('hidden')) {
-            console.warn("Preloader timeout reached. Forcing hide.");
-            preloaderContainer.classList.add('hidden');
-            if (preloaderContainer.style.opacity === '0' || getComputedStyle(preloaderContainer).opacity ===
-                '0') {
-                preloaderContainer.style.display = 'none';
-            }
-            if (content) {
-                content.style.display = 'block';
-            }
-        }
-    }, 10000); // 10 seconds timeout as an example
-
-</script>
-
 
 </body>
-
 </html>
-
-

@@ -13,10 +13,10 @@
                                 <div class="content">
                                     <h5 class="heading mymob"><img class="d-inline d-sm-none"
                                             src="{{asset('')}}upnl/assets/images/ger7.png" style="width: 50px; margin-right: 5px;" alt><a
-                                            href="#">rameshk036<div class="label d-inline d-sm-none ms-3 p-1"
+                                            href="#">{{Auth::user()->username}}<div class="label d-inline d-sm-none ms-3 p-1"
                                                 style="margin-top: -15px!important;">2-FA
                                                 OFF</div></a></h5>
-                                    <p class="desc mymob lfirn">arkashyap1772@gmail.com</p><br>
+                                    <p class="desc mymob lfirn">{{Auth::user()->email}}</p><br>
                                     <ul>
                                         <li>
                                             <p class="text baltxt">Account
