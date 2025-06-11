@@ -26,13 +26,13 @@
                                         <li>
                                             <p class="text baltxt">Total
                                                 Deposits</p>
-                                            <p class="price myv">$0.00
+                                            <p class="price myv">{{ currency() }} {{number_format(Auth::user()->investment->sum('amount'),2)}}
                                                 </p>
                                         </li>
                                         <li>
                                             <p class="text baltxt">Total
                                                 Withdrawals</p>
-                                            <p class="price myv">$0.00
+                                            <p class="price myv">{{ currency() }}{{ number_format(Auth::user()->withdraw(), 2) }}
                                                 </p>
                                         </li>
                                     </ul>

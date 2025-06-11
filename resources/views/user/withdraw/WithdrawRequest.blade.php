@@ -5,21 +5,37 @@
                     <div class="project-info-form style">
                         <h6 class="title mb-3">Withdraw Fund</h6>
                         <div class="table-responsive">
+<!-- @if ($errors->any())
+    <div class="alert alert-danger">
+        <ul class="mb-0">
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+
+@if (session('success'))
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+@endif -->
 
 
 
-                        <form method="post" action="" style="padding: 5px;">
-                               
+                        <form method="post" action="{{ route('user.Withdraw-Request') }}" style="padding: 5px;">
+                               	  {{ csrf_field() }}
+
                             <label class="fz16 mb8 mt8">Choose Payment</label>
 
                             <div class="row">
-                                <div class="col-lg-4 col-6"><input type="radio" name="type" value="process_92"
+                                <div class="col-lg-4 col-6"><input type="radio" name="PSys" value="USDT(TRC20)"
                                         id="process_92" class="btn-check" checked=""><label
                                         class="btn btn-dark deposit-button mb-2" for="process_92"><img
                                             src="{{asset('')}}upnl/images/92.gif" align="absmiddle" style="width: 32px;"> Tether
                                         TRC20</label></div>
 
-                                <div class="col-lg-4 col-6"><input type="radio" name="type" value="process_102"
+                                <div class="col-lg-4 col-6"><input type="radio" name="PSys" value="USDT(BEP20)"
                                         id="process_102" class="btn-check" checked=""><label
                                         class="btn btn-dark deposit-button mb-2" for="process_102"><img
                                             src="{{asset('')}}upnl/images/102.gif" align="absmiddle" style="width: 32px;"> Tether
@@ -32,7 +48,7 @@
                                     </fieldset>
                                 </fieldset>
                                  <fieldset class="mb22"><label class="fz16 mb8" for="add_Sum">TRX Password</label>
-                                    <fieldset><input type="password" name="trxpass" value="" placeholder="enter trx password" class="pl14" required="">
+                                    <fieldset><input type="password" name="trx_password" value="" placeholder="enter trx password" class="pl14" required="">
                                     </fieldset>
                                 </fieldset>
                                 <div class="topup__info">
@@ -43,6 +59,7 @@
                             </div>
 
                         </form>
+								    @include('partials.notify')
 
 
                         </div>
