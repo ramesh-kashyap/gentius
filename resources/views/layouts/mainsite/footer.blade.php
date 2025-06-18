@@ -11,7 +11,7 @@
             <div class="auto-container">
                 <div class="footer-top text-center">
                     <div class="shape-1 zoom-fade" style="background-image: url(assets/images/shape/shape-27.png);"></div>
-                    <h2>Start making profit right now</h2><a href="index%EF%B9%96a=support.html" class="theme-btn">Contact us</a></div>
+                    <h2>Start making profit right now</h2><a href="{{route('contact-us')}}" class="theme-btn">Contact us</a></div>
                 <div class="widget-section">
                     <div class="shape-2 zoom-fade" style="background-image: url(assets/images/shape/shape-29.png);"></div>
                     <div class="row clearfix">
@@ -19,19 +19,21 @@
                             <div class="footer-widget about-widget">
                                 <p>GENTIUS LTD automates crypto trading with AI, ensuring fast, secure, and profitable investments.</p>
                             </div>
-                            <figure class="logo"><a href="index%EF%B9%96a=home.html"><img src="assets/images/logo.png" alt="" style="max-width: 350px;"></a></figure>
+                            <figure class="logo"><a href="{{ route('Index') }}"><img src="assets/images/logo.png" alt="" style="max-width: 350px;"></a></figure>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
-                            <div class="footer-widget links-widget">
-                                <ul class="links-list clearfix">
-                                    <li><a href="index%EF%B9%96a=home.html">Home</a></li>
-                                    <li><a href="#Investments">Investments</a></li>
-                                    <li><a href="#About_Us">About Us</a></li>
-                                    <li><a href="#Partners">Partners</a></li>
-                                    <li><a href="#faq">FAQ</a></li>
-                                    <li><a href="index%EF%B9%96a=support.html">Contact</a></li>
-                                </ul>
-                            </div>
+        <div class="footer-widget links-widget">
+    <ul class="links-list clearfix">
+         <li><a href="{{ route('Index') }}#Index">Home</a></li>
+        <li><a href="{{ route('Index') }}#Investments">Investments</a></li>
+        <li><a href="{{ route('Index') }}#About_Us">About Us</a></li>
+        <li><a href="{{ route('Index') }}#Partners">Partners</a></li>
+        <li><a href="{{ route('Index') }}#faq">FAQ</a></li>
+    <li><a href="{{ route('contact-us') }}">Contact</a></li>
+    </ul>
+</div>
+
+
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
                             <div class="footer-widget contact-widget">

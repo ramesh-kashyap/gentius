@@ -170,7 +170,7 @@
                     <nav id="main-nav" class="main-nav modnav">
                         <ul id="menu-primary-menu" class="menu d-xl-none d-lg-none d-md-none">
                             <li class="menu-item menu-item current-menu-item"><a href="?a=account">Dashboard</a></li>
-                            <li class="menu-item"><a href="{{route('user.deposit')}}">Deposit</a></li>
+                            <li class="menu-item"><a href="{{route('user.invest')}}">Deposit</a></li>
                             <!-- <li class="menu-item"><a href="{{route('user.DepositHistory')}}">My
                                     Deposit</a></li> -->
                             <li class="menu-item"><a href="{{route('user.Withdraw')}}">Withdrawal</a></li>
@@ -238,7 +238,7 @@
                                     <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 9"
                                         style="width: 152.833px; margin-right: 30px;">
                                         <div class="icon-box-style4">
-                                            <a href="{{route('user.deposit')}}">
+                                            <a href="{{route('user.invest')}}">
                                                 <div class="icon-wrapper"><svg width="66" height="66"
                                                         viewBox="0 0 64 64" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg" id="top-up">
@@ -253,7 +253,7 @@
                                                             color="#000" paint-order="fill markers stroke"></path>
                                                     </svg></div>
                                             </a>
-                                            <h6><a href="{{route('user.deposit')}}">Deposit</a></h6>
+                                            <h6><a href="{{route('user.invest')}}">Deposit</a></h6>
                                         </div>
                                     </div>
                                     <!-- <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 9"

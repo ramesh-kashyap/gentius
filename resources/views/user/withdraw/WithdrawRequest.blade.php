@@ -5,21 +5,7 @@
                     <div class="project-info-form style">
                         <h6 class="title mb-3">Withdraw Fund</h6>
                         <div class="table-responsive">
-<!-- @if ($errors->any())
-    <div class="alert alert-danger">
-        <ul class="mb-0">
-            @foreach ($errors->all() as $error)
-                <li>{{ $error }}</li>
-            @endforeach
-        </ul>
-    </div>
-@endif
 
-@if (session('success'))
-    <div class="alert alert-success">
-        {{ session('success') }}
-    </div>
-@endif -->
 
 
 
@@ -59,7 +45,6 @@
                             </div>
 
                         </form>
-								    @include('partials.notify')
 
 
                         </div>

@@ -15,12 +15,6 @@
         <div class="form-box">
           <h4>Sign Up to your account</h4>
 
-
-
-      
-
-
-
           <form method=post action="{{route('registers')}}" >
        @csrf
             <!-- <table cellspacing=0 cellpadding=2 border=0> -->
@@ -32,6 +26,9 @@
               </div>
                 <div class="form-group">
                 <input type=email name=email value="" class=inpts size=30 placeholder="Your email">
+              </div>
+               <div class="form-group">
+                <input type=text name=position value="" class=inpts size=30 placeholder="Enter Position">
               </div>
               <div class="form-group">
                 <input type=password name=password value="" class=inpts size=30 placeholder="Define Password">

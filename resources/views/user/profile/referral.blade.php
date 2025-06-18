@@ -45,12 +45,12 @@
                                         <li class="summarx2 d-flex justify-content-start">
                                             <p class="me-2 mb-0"><i class="fa fa-user"></i></p>
                                             <p class="me-3 mb-0">Total Referrals</p>
-                                            <p class="mb-0 text-white">0</p>
+                                            <p class="mb-0 text-white">{{$user_direct}}</p>
                                         </li>
                                         <li class="summarx2 d-flex justify-content-start">
                                             <p class="me-2 mb-0"><i style="color: #86FF00;" class="fa fa-user"></i></p>
                                             <p class="me-3 mb-0">Active Referrals</p>
-                                            <p class="mb-0 text-white">0</p>
+                                            <p class="mb-0 text-white">{{$user_direct_active}}</p>
                                         </li>
                                     </ul>
                                 </div>

@@ -162,7 +162,6 @@
                 </div>
             </div>
         </form>
-            @include('partials.notify')
 
       <script>
     function sendOtp() {

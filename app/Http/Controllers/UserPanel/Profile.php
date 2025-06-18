@@ -46,7 +46,13 @@ class Profile extends Controller
     
     public function refreals()
     {
-    
+            $user=Auth::user();
+     $user_direct_active=User::where('sponsor',$user->id)->where('active_status','Active')->count();
+
+     $user_direct=User::where('sponsor',$user->id)->count();
+    $this->data['user_direct'] =$user_direct;
+    $this->data['user_direct_active'] =$user_direct_active;
+
     $this->data['page'] = 'user.profile.referral';
     return $this->dashboard_layout();
 
