@@ -158,7 +158,7 @@
                             <div class="text-box">
                                 <p>GENTIUS LTD is an advanced AI-driven platform that leverages intelligent trading bots to analyze decentralized exchanges (DEX) and execute trades with unmatched speed and precision. This cutting-edge technology ensures consistent
                                     daily returns while eliminating the risks of manual trading and fraudulent schemes.<br><br> Earn 1.1%-10% daily profits effortlessly—GENTIUS LTD handles the complexities of crypto trading while you enjoy a secure and seamless
-                                    investment experience.<br><br>Join GENTIUS LTD today and discover a smarter, safer, and more profitable way to invest in crypto!</p><a href="https://find-and-update.company-information.service.gov.uk/company/16406497" class="theme-btn">Check Company<i class="icon-18"></i></a></div>
+                                    investment experience.<br><br>Join GENTIUS LTD today and discover a smarter, safer, and more profitable way to invest in crypto!</p><a href="{{ route('register') }}" class="theme-btn">Check Company<i class="icon-18"></i></a></div>
                         </div>
                     </div>
                 </div>

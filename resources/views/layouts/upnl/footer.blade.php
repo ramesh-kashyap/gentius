@@ -1,3 +1,4 @@
+			  @include('partials.notify')
 
         <footer id="footer">
             <div class="footer-bottom">

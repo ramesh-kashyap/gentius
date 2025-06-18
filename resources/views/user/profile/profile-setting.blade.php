@@ -177,7 +177,6 @@
         </form>
 
 
-    @include('partials.notify')
 
 
 

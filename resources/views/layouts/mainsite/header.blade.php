@@ -51,13 +51,15 @@
                         <nav class="main-menu navbar-expand-md navbar-light">
                             <div class="collapse navbar-collapse show" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
-                                    <li><a href="/">Home</a></li>
-                                    <li><a href="#Investments">Investments</a></li>
-                                    <li><a href="#About_Us">About Us</a></li>
-                                    <li><a href="#Partners">Partners</a></li>
-                                    <li><a href="#faq">FAQ</a></li>
-                                    <li><a href="{{route('contact-us')}}">Contact</a></li> 
+                                       <li><a href="{{ route('Index') }}#Index">Home</a></li>
+        <li><a href="{{ route('Index') }}#Investments">Investments</a></li>
+        <li><a href="{{ route('Index') }}#About_Us">About Us</a></li>
+        <li><a href="{{ route('Index') }}#Partners">Partners</a></li>
+        <li><a href="{{ route('Index') }}#faq">FAQ</a></li>
+    <li><a href="{{ route('contact-us') }}">Contact</a></li>
                                 </ul>
+
+      
                             </div>
                         </nav>
                     </div>
@@ -68,7 +70,7 @@
                 <div class="auto-container">
                     <div class="outer-box">
                         <div class="logo-box">
-                            <figure class="logo"><a href="/"><img src="assets/images/logo.png"style="max-width: 250px;" alt=""></a></figure>
+                            <figure class="logo"><a href="{{ route('Index') }}"><img src="assets/images/logo.png"style="max-width: 250px;" alt=""></a></figure>
                         </div>
                         <div class="menu-area">
                             <nav class="main-menu">
