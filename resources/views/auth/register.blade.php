@@ -15,51 +15,70 @@
     <div class="form-box">
       <h4>Sign Up to your account</h4>
 
-      <form method="post" action="{{ route('registers') }}">
+      <style>
+        select {
+          width: 100%;
+          padding: 10px;
+          border-radius: 50px;
+          font-size: 14px;
+          /* Controls the font size of selected item */
+          border: none;
+          background: rgb(41, 41, 50);
+          color: white;
+        }
+
+        select option {
+          font-size: 12px;
+          /* 👈 Controls dropdown options font size */
+          color: #ccc;
+          background: #1e1e1e;
+        }
+      </style>
+
+
+
+
+      @if($errors->any())
+      <div style="background: #ffdddd; border: 1px solid #ff5e5e; color: #a94442; padding: 10px 15px; border-radius: 5px; margin-bottom: 15px;">
+        <strong>Error:</strong> {{ $errors->first() }}
+      </div>
+      @endif
+
+      <form method=post action="{{route('registers')}}">
         @csrf
-
+        <!-- <table cellspacing=0 cellpadding=2 border=0> -->
         <div class="form-group">
-          <input type="text" name="name" value="" class="inpts" size="30" placeholder="Your Full Name">
-        </div>
-
-        <div class="form-group">
-          <input type="text" name="sponsor" value="" class="inpts" size="30" placeholder="Your Username">
-        </div>
-
-        <div class="form-group">
-          <input type="email" name="email" value="" class="inpts" size="30" placeholder="Your email">
+          <input type=text name=name value="" class=inpts size=30 placeholder="Your Full Name">
         </div>
         <div class="form-group">
-          <label class="d-block mb-1" style="margin-right: 235px;
-                    font-size: medium;">Position:</label>
-          <label><input type="radio" name="position" value="left" required style="
-    margin-left: -156px;
-"> Left</label> &nbsp;&nbsp;
-          <label><input type="radio" name="position" value="right" required> Right</label>
+          <input type=text name=sponsor value="" class=inpts size=30 placeholder="Your Username">
         </div>
-
         <div class="form-group">
-          <input type="password" name="password" value="" class="inpts" size="30" placeholder="Define Password">
+          <input type=email name=email value="" class=inpts size=30 placeholder="Your email">
         </div>
-
+        <div class="form-group" style="width: 100%; border-radius: 50px;font-size: 13px; background: rgb(41, 41, 50); padding-left: 10px;padding-top: 3px;padding-bottom: 3px;">
+          <label for="position" style="color: white;"></label>
+          <select name="position" id="position" required>
+            <option value="">Select Position</option>
+            <option value="left">Left</option>
+            <option value="right">Right</option>
+          </select>
+        </div>
         <div class="form-group">
-          <input type="password" name="password_confirmation" value="" class="inpts" size="30" placeholder="Retype Password">
+          <input type=password name=password value="" class=inpts size=30 placeholder="Define Password">
         </div>
-
-        <!-- 🚨 NEW: Position Selector (Left / Right) -->
-
-
+        <div class="form-group">
+          <input type=password name=password_confirmation value="" class=inpts size=30 placeholder="Retype Password">
+        </div>
 
 
         <div class="form-group">
-          <label><input type="checkbox" name="agree" value="1"> I agree with <a href="#">Terms and conditions</a></label>
+          <input type=checkbox name=agree value=1> I agree with <a href="#">Terms and
+            conditions</a>
         </div>
-
-        <div class="btn-box">
-          <button type="submit" class="theme-btn">Register</button>
-        </div>
+        <div class="btn-box"><button type="submit" class="theme-btn">Register</button></div>
+        <!-- </table> -->
       </form>
-
       <div class="text">Already have an account? <a href="{{route('login')}}">Log in</a></div>
     </div>
   </div>

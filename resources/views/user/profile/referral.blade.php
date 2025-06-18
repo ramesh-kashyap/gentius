@@ -1,5 +1,4 @@
-
-        <section class="tf-section project_2" style="padding: 0 0 10px !important;">
+  <section class="tf-section project_2" style="padding: 0 0 10px !important;">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -12,7 +11,7 @@
                                     <h5 class="heading">Your Referral Link</h5>
                                 </div>
                                 <div class="content linkbox">
-                                    <h6 class="reflinx" id="reflink">{{route('registers')}}?ref={{Auth::user()->username}}</h6>
+                                    <h6 class="reflinx" id="reflink">{{route('register')}}/?ref={{Auth::user()->username}}</h6>
                                     <div class="td td2"><i onclick="copyToClipboard('reflink')"
                                             class="fa fa-copy cicon"></i></div>
                                 </div>
@@ -40,7 +39,7 @@
                                         <li class="summarx2 d-flex justify-content-start">
                                             <p class="me-2 mb-0"><i style="color: #fff;" class="fas fa-coins"></i></p>
                                             <p class="me-3 mb-0">Referral Earnings</p>
-                                            <p class="mb-0 text-white">{{ currency() }}{{ number_format(Auth::user()->direct_incomes(), 2) }}</p>
+                                            <p class="mb-0 text-white">$0.00 USD</p>
                                         </li>
                                         <li class="summarx2 d-flex justify-content-start">
                                             <p class="me-2 mb-0"><i class="fa fa-user"></i></p>

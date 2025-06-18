@@ -10,14 +10,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="{{asset('')}}upnl/app/bootstrap/css/bootstrap.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="{{asset('')}}upnl/app/bootstrap/css/bootstrap.css"> -->
     <link rel="stylesheet" href="{{asset('')}}upnl/app/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="{{asset('')}}upnl/app/dist/app.css">
     <link rel="stylesheet" href="{{asset('')}}upnl/assets/font/risebot.css">
     <link rel="stylesheet" href="{{asset('')}}upnl/assets/font/font-awesome.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script async src="https://mc.yandex.ru/metrika/tag.js"></script>
-    <script type="text/javascript" charset="utf-8" async src="https://www.smartsuppchat.com/loader.js?"></script>
+    <script type="text/javascript" charset="utf-8" async src="https://www.smartsuppchat.cosssssssssm/loader.js?"></script>
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://kit.fontawesome.com/2c3f853d3a.js" crossorigin="anonymous"></script>
     <style>
@@ -176,6 +177,7 @@
                             <li class="menu-item"><a href="{{route('user.Withdraw')}}">Withdrawal</a></li>
                             <li class="menu-item"><a href="{{route('user.Withdraw-History')}}">History</a></li>
                             <li class="menu-item"><a href="{{route('user.referral')}}">Referrals</a></li>
+                            <li class="menu-item"><a href="{{route('user.tree-view')}}">Binary Tree</a></li>
                             <!-- <li class="menu-item"><a href="{{route('user.news')}}">Banners</a></li> -->
                             <li class="menu-item"><a href="{{route('user.activities')}}">My
                                     Account</a></li>
@@ -353,6 +355,31 @@
                                                     </svg></div>
                                             </a>
                                             <h6><a href="{{route('user.referral')}}">Referrals</a></h6>
+                                        </div>
+                                    </div>
+                                     <div class="swiper-slide" role="group" aria-label="5 / 9"
+                                        style="width: 152.833px; margin-right: 30px;">
+                                        <div class="icon-box-style4">
+                                            <a href="{{route('user.tree-view')}}">
+                                                <div class="icon-wrapper"><svg width="66" height="66"
+                                                        viewBox="0 0 64 64" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg" id="customer-referral">
+                                                        <g>
+                                                            <path fill="#798DA3"
+                                                                d="M19,36H45a1,1,0,0,0,1-1V31a9,9,0,0,0-1.2-4.5,1,1,0,1,0-1.731,1A7,7,0,0,1,44,31v3H42V29a1,1,0,0,0-2,0v5H24V29a1,1,0,0,0-2,0v5H20V31a7.008,7.008,0,0,1,7-7H37a7,7,0,0,1,3.391.875,1,1,0,0,0,.97-1.75,9,9,0,0,0-4.1-1.109A7.973,7.973,0,0,0,40,16a3,3,0,0,0,0-6V5a3,3,0,0,0-2.129-2.871A3,3,0,0,0,35,0H23a1,1,0,0,0-1,1V7a4.952,4.952,0,0,0,1.141,3.14A2.992,2.992,0,0,0,24,16a7.974,7.974,0,0,0,2.741,6.013A9,9,0,0,0,18,31v4A1,1,0,0,0,19,36ZM41,13a1,1,0,0,1-1,1V12A1,1,0,0,1,41,13ZM24,2H35a1,1,0,0,1,1,1,1,1,0,0,0,1,1,1,1,0,0,1,1,1V9.731A2,2,0,0,1,37,8a1,1,0,0,0-1.707-.708l-.657.658A6.954,6.954,0,0,1,29.687,10H27a3,3,0,0,1-3-3ZM23,13a1,1,0,0,1,1-1v2A1,1,0,0,1,23,13Zm3,3V11.9a5,5,0,0,0,1,.1h2.687a8.931,8.931,0,0,0,5.789-2.109A4.017,4.017,0,0,0,38,11.868V16a6,6,0,0,1-12,0Z">
+                                                            </path>
+                                                            <circle cx="29" cy="14" r="1" fill="#798DA3"></circle>
+                                                            <circle cx="35" cy="14" r="1" fill="#798DA3"></circle>
+                                                            <path fill="#798DA3"
+                                                                d="M11.21 52.363A3.964 3.964 0 0 0 12 50a4 4 0 0 0-8 0 3.964 3.964 0 0 0 .79 2.363A7.009 7.009 0 0 0 0 59v2a3 3 0 0 0 3 3H13a3 3 0 0 0 3-3V59A7.009 7.009 0 0 0 11.21 52.363zM8 48a2 2 0 1 1-2 2A2 2 0 0 1 8 48zm6 13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V59a5.006 5.006 0 0 1 5-5H9a5.006 5.006 0 0 1 5 5zM35.21 52.363A3.964 3.964 0 0 0 36 50a4 4 0 0 0-8 0 3.964 3.964 0 0 0 .79 2.363A7.009 7.009 0 0 0 24 59v2a3 3 0 0 0 3 3H37a3 3 0 0 0 3-3V59A7.009 7.009 0 0 0 35.21 52.363zM32 48a2 2 0 1 1-2 2A2 2 0 0 1 32 48zm6 13a1 1 0 0 1-1 1H27a1 1 0 0 1-1-1V59a5.006 5.006 0 0 1 5-5h2a5.006 5.006 0 0 1 5 5zM59.21 52.363A3.964 3.964 0 0 0 60 50a4 4 0 0 0-8 0 3.964 3.964 0 0 0 .79 2.363A7.009 7.009 0 0 0 48 59v2a3 3 0 0 0 3 3H61a3 3 0 0 0 3-3V59A7.009 7.009 0 0 0 59.21 52.363zM56 48a2 2 0 1 1-2 2A2 2 0 0 1 56 48zm6 13a1 1 0 0 1-1 1H51a1 1 0 0 1-1-1V59a5.006 5.006 0 0 1 5-5h2a5.006 5.006 0 0 1 5 5z">
+                                                            </path>
+                                                            <path fill="#798DA3"
+                                                                d="M14 51a1 1 0 0 0 .707-.293L25 40.414V41a1 1 0 0 0 2 0V38a1 1 0 0 0-1-1H23a1 1 0 0 0 0 2h.586L13.293 49.293A1 1 0 0 0 14 51zM32 45a1 1 0 0 0 1-1V40.414l.293.293a1 1 0 0 0 1.414-1.414l-2-2a.99.99 0 0 0-.326-.217 1 1 0 0 0-.764 0 .99.99 0 0 0-.326.217l-2 2a1 1 0 0 0 1.414 1.414L31 40.414V44A1 1 0 0 0 32 45zM41 39a1 1 0 0 0 0-2H38a1 1 0 0 0-1 1v3a1 1 0 0 0 2 0v-.586L49.293 50.707a1 1 0 0 0 1.414-1.414L40.414 39z">
+                                                            </path>
+                                                        </g>
+                                                    </svg></div>
+                                            </a>
+                                            <h6><a href="{{route('user.tree-view')}}">Binary Tree</a></h6>
                                         </div>
                                     </div>
                                     <!-- <div class="swiper-slide" role="group" aria-label="6 / 9"

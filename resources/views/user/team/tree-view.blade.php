@@ -36,7 +36,7 @@
         outline: 0;
     }
     
-    /*Om code start*/
+    /* /Om code start/ */
     /* .data-table td span:nth-child(3n - 1){cursor:pointer !important; color:#e6b429 !important; font-weight:400 !important; padding:6px 6px 4px 6px;}  */
     .load-gif img{ width:120px;}
     .load-gif{width:20px !important;}
@@ -60,7 +60,7 @@
         opacity: 0.8;
     }
     </style>
-    <h2 class="titleLk">Tree View</h2>
+    <h2 class="text-center">Tree View</h2>
     <div class="historyPage">
     
         <div class="tablePartners">
@@ -70,23 +70,7 @@
 
 
                       <tbody>
-                          <tr class="text-center">
-                              <td colspan="8">
-                                  <h3 class="text-center"><strong>MY STRUCTURE</strong></h3>
-                              </td>
-                          </tr>
-                          <tr class="text-center">
-                              <td colspan="8" style="border-color:#e7f1f8; background-color:#e7f1f8;"
-                                  class="text-center">Downline ID -&gt;
-                                  <form method="get" action="{{route('user.tree-view')}}">
-                                      <input name="suser" type="text" id="suser">
-                                      <input type="submit" name="submit" value="Search" id="submit">
-
-                                  </form>
-
-                                  <br>
-                                  <span id="ctl00_ContentPlaceHolder1_lblerror"></span></td>
-                          </tr>
+                 
                           <?php
           $status = @$mydata->active_status;
           if ($status!="")
@@ -118,7 +102,7 @@
                                       title='' data-html="true" OnClick="javascript:void(0)"
                                       data-toggle="tooltip" data-html="true" data-trigger="hover" title=""
                                       data-placement="bottom" data-original-title=""
-                                      src="{{asset('assets/c20a81c4/img')}}/{{$color}}.png"
+                                      src="{{asset('')}}upnl/assets/images/avt.webp"
                                       style="border-width: 0px; width: 78px; height: 59px; background: #e7f1f8;">
                                   <br>
                                   <span id="ctl00_ContentPlaceHolder1_Label0" style=" font-weight: 700">
@@ -169,7 +153,7 @@
                                           href="{{route('user.tree-view')}}?user_id={{@$childs_1->username}}"
                                           data-toggle="tooltip" data-html="true" data-trigger="hover" title=""
                                           data-placement="bottom" data-original-title=""
-                                          src="{{asset('assets/c20a81c4/img')}}/{{$color}}.png"
+                                          src="{{asset('')}}upnl/assets/images/avt.webp"
                                           style="border-width: 0px;width: 78px;height: 59px;background: #e7f1f8;"
                                           userName="<?=@$childs_1[0]['name']?strtoupper(@$childs_1[0]['name']):""?>">
                                   </a> <br>
@@ -212,7 +196,7 @@
                                           href="{{route('user.tree-view')}}?user_id={{@$childs_2->username}}e"
                                           data-toggle="tooltip" data-html="true" data-trigger="hover" title=""
                                           data-placement="bottom" data-original-title=""
-                                          src="{{asset('assets/c20a81c4/img')}}/{{$color}}.png" style="border-width: 0px;
+                                          src="{{asset('')}}upnl/assets/images/avt.webp" style="border-width: 0px;
 width: 78px;
 height: 59px;
 background: #e7f1f8;
@@ -268,7 +252,7 @@ background: #e7f1f8;
                                           title='' data-html="true" data-toggle="tooltip" data-html="true"
                                           data-trigger="hover" title="" data-placement="bottom"
                                           data-original-title=""
-                                          src="{{asset('assets/c20a81c4/img')}}/{{$color}}.png" style="border-width: 0px;
+                                          src="{{asset('')}}upnl/assets/images/avt.webp" style="border-width: 0px;
 width: 78px;
 height: 59px;
 background: #e7f1f8;
@@ -313,7 +297,7 @@ background: #e7f1f8;
                                           href="{{route('user.tree-view')}}?user_id={{@$childs_4->username}}"
                                           data-toggle="tooltip" data-html="true" data-trigger="hover" title=""
                                           data-placement="bottom" data-original-title=""
-                                          src="{{asset('assets/c20a81c4/img')}}/{{$color}}.png" style="border-width: 0px;
+                                          src="{{asset('')}}upnl/assets/images/avt.webp" style="border-width: 0px;
 width: 78px;
 height: 59px;
 background: #e7f1f8;
@@ -354,7 +338,7 @@ background: #e7f1f8;
                                       href="{{route('user.tree-view')}}?user_id={{@$childs_5->username}}">
                                       <input type="image" name="ctl00$ContentPlaceHolder1$ImageButton5"
                                           id="ctl00_ContentPlaceHolder1_ImageButton5"
-                                          src="{{asset('assets/c20a81c4/img')}}/{{$color}}.png"
+                                          src="{{asset('')}}upnl/assets/images/avt.webp"
                                           data-toggle="tooltip" title='' data-html="true"
                                           href="{{route('user.tree-view')}}?user_id={{@$childs_5->username}}"
                                           data-toggle="tooltip" data-html="true" data-trigger="hover" title=""
@@ -401,7 +385,7 @@ background: #e7f1f8;
                                           title='' data-html="true" data-toggle="tooltip" data-html="true"
                                           data-trigger="hover" title="" data-placement="bottom"
                                           data-original-title=""
-                                          src="{{asset('assets/c20a81c4/img')}}/{{$color}}.png" style="border-width: 0px;
+                                          src="{{asset('')}}upnl/assets/images/avt.webp" style="border-width: 0px;
 width: 78px;
 height: 59px;
 background: #e7f1f8;
@@ -456,14 +440,6 @@ background: #e7f1f8;
       </div>
     </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-   
-    {{-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script> --}}
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    
-   <script src="{{asset('assets/c20a81c4/js/om_all_function.js')}}"></script>
 
 
 </div>
